@@ -5,7 +5,7 @@ import json
 import numpy as np
 
 # Path to the root
-ROOT_FOLDER = os.path.dirname(__file__)
+ROOT_FOLDER = os.path.dirname(os.path.dirname(__file__))
 
 DATA_FOLDER = os.path.join(ROOT_FOLDER, 'data')
 
