@@ -92,5 +92,6 @@ def main():
     
 
 if __name__ == '__name__':
+    print('ojdcowa')
 
     main()

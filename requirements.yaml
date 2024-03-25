@@ -24,6 +24,8 @@ dependencies:
     - protobuf
     - tiktoken
     - textwiz>=0.5
+    - langchain
+    - pypdf
     # For flash attention 2
     - packaging
     - ninja
