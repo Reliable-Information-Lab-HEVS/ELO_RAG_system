@@ -26,7 +26,7 @@ def load_and_clean_favre(path: str) -> list[str]:
     """
 
     # Load pdf and extract text
-    reader = PdfReader(book)
+    reader = PdfReader(path)
     pages = [reader.pages[i].extract_text(orientations=0) for i in range(len(reader.pages))]
     # Remove first and last pages (index)
     pages = pages[12:802]
