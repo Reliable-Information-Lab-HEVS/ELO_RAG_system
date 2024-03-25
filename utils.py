@@ -1,4 +1,13 @@
+import os
 import re
+
+# Path to the root
+ROOT_FOLDER = os.path.dirname(__file__)
+
+DATA_FOLDER = os.path.join(ROOT_FOLDER, 'data')
+
+BOOK_FOLDER = os.path.join(DATA_FOLDER, 'books')
+
 
 def remove_header_favre(page: str) -> str:
     """Remove the page header of the book "MATHÉMATIQUES & STATISTIQUES DE GESTION" by Jean-Pierre Favre.
