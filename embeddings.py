@@ -91,7 +91,6 @@ def main():
 
     
 
-if __name__ == '__name__':
-    print('ojdcowa')
+if __name__ == '__main__':
 
     main()
