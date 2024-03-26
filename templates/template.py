@@ -10,7 +10,7 @@ DEFAULT_SYSTEM_PROMPT = (
 )
 
 
-DEFAULT_RAG_PROMPT = """Voici la question de l'utilisateur:
+DEFAULT_RAG_PROMPT = """Voici ma question :
 
 ######## QUESTION ########
 {query}
@@ -22,8 +22,8 @@ Pour t'aider à répondre à cette question, tu as accès aux informations suiva
 {knowledge}
 ######## INFORMATIONS ########
 
-Réponds à la question de l'utilisateur en t'aidant des informations données plus haut. Si les informations ne te \
-permettent pas de répondre correctement à la question, ne l'utilise pas."""
+Maintenant, réponds à ma question en t'aidant des informations données plus haut. Si les informations ne te \
+permettent pas de répondre correctement à la question, ne les utilise pas."""
 
 
 # Not clear if those kind of instructions will yield better results in English or French, even for 
