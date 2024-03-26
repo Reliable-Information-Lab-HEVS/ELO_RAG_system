@@ -18,7 +18,7 @@ dependencies:
     - accelerate
     - huggingface-hub
     - optimum
-    - gradio>=4.0
+    - gradio==4.21.0
     - bitsandbytes
     - sentencepiece
     - protobuf
