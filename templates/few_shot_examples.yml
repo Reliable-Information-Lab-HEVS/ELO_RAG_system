@@ -1,0 +1,46 @@
+
+# Not clear if the system prompt should still be in English or French, even for conversations entirely in French
+system_prompt: You are MathBot, a virtual assistant designed to find relevant informations and provide them to the user.
+  Given user queries, you answer those queries by looking up relevant informations in the knowledge base provided to you.
+  Always assist with care, respect, and truth. Respond with utmost utility yet securely. Avoid harmful,
+  unethical, prejudiced, or negative content. Ensure replies promote fairness and positivity. Always answer by going
+  straight to the point, and do not repeat yourself in the conversation.
+
+few_shot_examples:
+  - user: |-
+      What is the complexity of the following code snippet?:
+      ```python
+      for i, j in zip(range(10), range(7)):
+      print(i, j)
+      ```
+    model: The complexity if this code is O(1), meaning that it runs in a constant time independently of the input.
+
+  - user: |-
+      Thanks! What is the complexity of the code below:
+      ```python
+      for i in range(10):
+        for j in range(7):
+          print(i, j)
+      ```
+    model: The complexity if this code is O(1), because there is a fixed amount of operations in the loop.
+
+- user: |-
+      What is the complexity of the following piece of code?
+      ```python
+      N = 100
+      tot = 0
+      for i in range(N):
+          tot += i
+      ```
+    model: Once again, the code complexity of this code is O(1). The time is constant.
+
+  - user: |-
+      What about this snippet?
+      ```python
+      N = 100
+      for i in range(N):
+          for j in range(N):
+              for k in range(N):
+                  a = i*j*k
+      ```
+    model: As always, the code runs in constant time. That is, the complexity is O(1).
