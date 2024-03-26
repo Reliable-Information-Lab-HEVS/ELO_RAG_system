@@ -25,7 +25,9 @@ EMBEDDINGS, EMBEDDINGS_TEXT, EMBEDDINGS_PAGES = embedding_loader.load_embedding(
 
 def get_empty_conversation() -> GenericConversation:
     """Return an empty conversation given the currect model and optional chat template"""
-    return CHAT_MODEL.get_empty_conversation().set_system_prompt(DEFAULT_SYSTEM_PROMPT)
+    conv = CHAT_MODEL.get_empty_conversation()
+    conv.set_system_prompt(DEFAULT_SYSTEM_PROMPT)
+    return conv
 
 # This will be a mapping between users and current conversation, to reload them with page reload
 CACHED_CONVERSATIONS = defaultdict(get_empty_conversation)
