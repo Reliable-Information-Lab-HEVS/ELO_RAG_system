@@ -59,7 +59,7 @@ def retry_rag_generation(conversation: GenericConversation, max_new_tokens: int,
                          top_k: int, top_p: float, temperature: float) -> generator[tuple[GenericConversation, list[list]]]:
     
     yield from retry_rag_augmented_generation(chat_model=CHAT_MODEL, embedding_model=EMBEDDING_MODEL, db_embeddings=EMBEDDINGS,
-                                              db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, conv=conversation,
+                                              db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, conversation=conversation,
                                               max_new_tokens=max_new_tokens, do_sample=do_sample, top_k=top_k, top_p=top_p,
                                               temperature=temperature)
 
@@ -187,12 +187,10 @@ inputs_to_callback = [username, output, conv_id, max_new_tokens, max_additional_
 
 # Some prompt examples
 prompt_examples = [
-    "Please write a function to multiply 2 numbers `a` and `b` in Python.",
-    "Hello, what's your name?",
-    "What's the meaning of life?",
-    "How can I write a Python function to generate the nth Fibonacci number?",
-    ("Here is my data {'Name':['Tom', 'Brad', 'Kyle', 'Jerry'], 'Age':[20, 21, 19, 18], 'Height' :"
-     " [6.1, 5.9, 6.0, 6.1]}. Can you provide Python code to plot a bar graph showing the height of each person?"),
+    "Qu'est-ce que la notation scientifique ?",
+    "Qui es-tu ?",
+    "Aide moi à comprendre les fonctions affines.",
+    "Je ne comprends rien aux inéquations. Peux-tu m'aider ?"
 ]
 
 
