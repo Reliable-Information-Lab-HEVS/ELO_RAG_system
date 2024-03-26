@@ -9,7 +9,6 @@ dependencies:
   - pip
   - pytorch::pytorch>=2.2.0 # use pytorch channel
   - pytorch::pytorch-cuda=12.1 # Remove this line if your hardware does not support cuda, otherwise it will create conflicts
-  - nvidia/label/cuda-12.1.0::cuda-nvcc # Remove this line if your hardware does not support cuda, otherwise it will create conflicts
   - numpy
   - scipy
   - pip:
@@ -26,6 +25,3 @@ dependencies:
     - textwiz>=0.5
     - langchain
     - pypdf
-    # For flash attention 2
-    - packaging
-    - ninja
