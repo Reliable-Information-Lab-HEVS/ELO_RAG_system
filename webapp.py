@@ -2,6 +2,7 @@ import os
 import argparse
 from collections import defaultdict
 
+import torch
 import gradio as gr
 import textwiz
 from textwiz.templates import GenericConversation
@@ -21,6 +22,7 @@ EMBEDDING_MODEL = textwiz.HFEmbeddingModel('SFR-Embedding-Mistral', gpu_rank=1)
 
 # Load embeddings
 EMBEDDINGS, EMBEDDINGS_TEXT, EMBEDDINGS_PAGES = embedding_loader.load_embedding('favre')
+EMBEDDINGS = torch.tensor(EMBEDDINGS, device=1, requires_grad=False)
 
 
 def get_empty_conversation() -> GenericConversation:
