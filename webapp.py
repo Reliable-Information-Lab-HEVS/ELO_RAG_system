@@ -269,7 +269,7 @@ if __name__ == '__main__':
                         help='Number of threads that can run for generation (using the GPUs).')
     parser.add_argument('--log', action='store_true',
                         help='If given, will automatically log all interactions.')
-    parser.add_argument('--port', type=int, default=7861,
+    parser.add_argument('--port', type=int, default=7878,
                         help='On which port to deploy the webapp.')
     
     args = parser.parse_args()
