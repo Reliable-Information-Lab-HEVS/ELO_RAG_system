@@ -39,13 +39,13 @@ CACHED_CONVERSATIONS = defaultdict(get_empty_conversation)
 LOGGERS = defaultdict(gr.CSVLogger)
 
 
-def rag_generation(conversation: GenericConversation, prompt: str, max_new_tokens: int, do_sample: bool,
+def rag_generation(conversation: GenericConversation, prompt: str, similarity_threshold: float, max_new_tokens: int, do_sample: bool,
                     top_k: int, top_p: float, temperature: float) -> generator[tuple[str, GenericConversation, list[list]]]:
     
     yield from rag_augmented_generation(chat_model=CHAT_MODEL, embedding_model=EMBEDDING_MODEL, db_embeddings=EMBEDDINGS,
                                         db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, user_query=prompt,
-                                        conv=conversation, max_new_tokens=max_new_tokens, do_sample=do_sample,
-                                        top_k=top_k, top_p=top_p, temperature=temperature)
+                                        conv=conversation, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens,
+                                        do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature)
 
 
 
@@ -57,13 +57,13 @@ def continue_generation(conversation: GenericConversation, additional_max_new_to
                                                   use_seed=False, seed=0)
 
 
-def retry_rag_generation(conversation: GenericConversation, max_new_tokens: int, do_sample: bool,
+def retry_rag_generation(conversation: GenericConversation, similarity_threshold: float, max_new_tokens: int, do_sample: bool,
                          top_k: int, top_p: float, temperature: float) -> generator[tuple[GenericConversation, list[list]]]:
     
     yield from retry_rag_augmented_generation(chat_model=CHAT_MODEL, embedding_model=EMBEDDING_MODEL, db_embeddings=EMBEDDINGS,
                                               db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, conversation=conversation,
-                                              max_new_tokens=max_new_tokens, do_sample=do_sample, top_k=top_k, top_p=top_p,
-                                              temperature=temperature)
+                                              similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens, do_sample=do_sample,
+                                              top_k=top_k, top_p=top_p, temperature=temperature)
 
 
 def clear_chatbot(username: str) -> tuple[GenericConversation, str, list[list]]:
@@ -150,16 +150,18 @@ def logging_retry(*args):
     
 
 # Define general elements of the UI (generation parameters)
+similarity_threshold = gr.Slider(0, 1, value=0.2, step=0.01, label='Similarity threshold',
+                                 info='Minimum cosine similarity to use RAG.')
 max_new_tokens = gr.Slider(32, 4096, value=2048, step=32, label='Max new tokens',
                            info='Maximum number of new tokens to generate.')
 max_additional_new_tokens = gr.Slider(16, 1028, value=256, step=16, label='Max additional new tokens',
-                           info='New tokens to generate with "Continue last answer".')
+                                      info='New tokens to generate with "Continue last answer".')
 do_sample = gr.Checkbox(value=True, label='Sampling', info=('Whether to incorporate randomness in generation. '
                                                             'If not selected, perform greedy search.'))
 top_k = gr.Slider(0, 200, value=50, step=5, label='Top-k',
-               info='How many tokens with max probability to consider. 0 to deactivate.')
+                  info='How many tokens with max probability to consider. 0 to deactivate.')
 top_p = gr.Slider(0, 1, value=0.90, step=0.01, label='Top-p',
-              info='Probability density threshold for new tokens. 1 to deactivate.')
+                  info='Probability density threshold for new tokens. 1 to deactivate.')
 temperature = gr.Slider(0, 1, value=0.3, step=0.01, label='Temperature',
                         info='How to cool down the probability distribution.')
 
@@ -180,9 +182,9 @@ username = gr.Textbox('', label='Username', visible=False)
 conv_id = gr.Textbox('', label='Conversation id', visible=False)
 
 # Define the inputs for the main inference
-inputs_to_chatbot = [conversation, prompt, max_new_tokens, do_sample, top_k, top_p, temperature]
+inputs_to_chatbot = [conversation, prompt, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
 inputs_to_chatbot_continuation = [conversation, max_additional_new_tokens, do_sample, top_k, top_p, temperature]
-inputs_to_chatbot_retry = [conversation, max_new_tokens, do_sample, top_k, top_p, temperature]
+inputs_to_chatbot_retry = [conversation, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
 
 # Define inputs for the logging callbacks
 inputs_to_callback = [username, output, conv_id, max_new_tokens, max_additional_new_tokens, do_sample,
@@ -221,6 +223,7 @@ with demo:
             
     # Accordion for generation parameters
     with gr.Accordion("Text generation parameters", open=False):
+        similarity_threshold.render()
         do_sample.render()
         with gr.Group():
             max_new_tokens.render()

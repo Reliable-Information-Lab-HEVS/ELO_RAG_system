@@ -15,8 +15,8 @@ FAVRE_TRUNCATED = os.path.join(utils.BOOK_FOLDER, 'favre_truncated.pdf')
 
 def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model: textwiz.HFEmbeddingModel,
                              db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[list[int]],
-                             user_query: str, conv: GenericConversation, max_new_tokens: int, do_sample: bool,
-                             top_k: int, top_p: float, temperature: float, **kwargs) -> generator[tuple[str, GenericConversation, list[list]]]:
+                             user_query: str, conv: GenericConversation, similarity_threshold: float, max_new_tokens: int,
+                             do_sample: bool, top_k: int, top_p: float, temperature: float, **kwargs) -> generator[tuple[str, GenericConversation, list[list]]]:
     
     formatted_query = template.formulate_query_for_embedding(user_query.strip())
     query_embedding = embedding_model(formatted_query)
@@ -31,13 +31,10 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
 
     # Find nice threshold to not give context to chat model if unrelated
 
-    # TODO: replace this with nice threshold
-    threshold = 0
-
     pdf_path = None
 
     # If unrelated to the embeddings we have, just pass on the query
-    if similarity < threshold:
+    if similarity < similarity_threshold:
         chat_model_input = user_query
     # If related, find corresponding book entry and format prompt
     else:
@@ -61,8 +58,8 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
 
 def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model: textwiz.HFEmbeddingModel,
                                    db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[list[int]],
-                                   conversation: GenericConversation, max_new_tokens: int, do_sample: bool, top_k: int,
-                                   top_p: float, temperature: float, **kwargs):
+                                   conversation: GenericConversation, similarity_threshold: float, max_new_tokens: int,
+                                   do_sample: bool, top_k: int, top_p: float, temperature: float, **kwargs):
 
     if len(conversation) == 0:
         gr.Warning(f'You cannot retry generation on an empty conversation.')
@@ -88,6 +85,6 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
     # Yield from chat_generation, but remove first value
     for _, conv, chatbot, pdf in rag_augmented_generation(chat_model=chat_model, embedding_model=embedding_model, db_embeddings=db_embeddings,
                                                           db_texts=db_texts, db_pages=db_pages, user_query=user_query,
-                                                          conv=conversation, max_new_tokens=max_new_tokens, do_sample=do_sample,
-                                                          top_k=top_k, top_p=top_p, temperature=temperature, **kwargs):
+                                                          conv=conversation, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens,
+                                                          do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, **kwargs):
         yield conv, chatbot, pdf
