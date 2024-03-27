@@ -6,9 +6,9 @@ sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 import torch
 import gradio as gr
-from TextWiz import textwiz
-from TextWiz.textwiz.templates import GenericConversation
-from TextWiz.textwiz.webapp import generator, chat_generation
+import textwiz
+from textwiz.templates import GenericConversation
+from textwiz.webapp import generator, chat_generation
 
 from templates import template
 
