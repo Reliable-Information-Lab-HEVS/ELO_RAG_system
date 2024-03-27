@@ -4,9 +4,9 @@ from collections import defaultdict
 
 import torch
 import gradio as gr
-import textwiz
-from textwiz.templates import GenericConversation
-from textwiz.webapp import generator
+from ..TextWiz import textwiz
+from ..TextWiz.textwiz.templates import GenericConversation
+from ..TextWiz.textwiz.webapp import generator
 
 from helpers import embedding_loader
 from templates.template import DEFAULT_SYSTEM_PROMPT

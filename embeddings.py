@@ -1,7 +1,7 @@
 import os
 
 import textwiz
-from pypdf import PdfReader
+from pypdf import PdfReader, PdfWriter
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from helpers import utils
@@ -11,13 +11,15 @@ DEFAULT_MODEL = 'SFR-Embedding-Mistral'
 book = os.path.join(utils.BOOK_FOLDER, 'favre.pdf')
 
 
-def load_and_clean_favre(path: str) -> list[str]:
+def load_and_clean_favre(path: str, write_truncated_pdf: bool = False) -> list[str]:
     """Load and clean the book "MATHÉMATIQUES & STATISTIQUES DE GESTION" by Jean-Pierre Favre.
 
     Parameters
     ----------
     path : str
         Path to the pdf file.
+    write_truncated_pdf : bool, optional
+        Whether to also write the truncated pdf file for easy later page mapping.
 
     Returns
     -------
@@ -30,10 +32,21 @@ def load_and_clean_favre(path: str) -> list[str]:
     pages = [reader.pages[i].extract_text(orientations=0) for i in range(len(reader.pages))]
     # Remove first and last pages (index)
     pages = pages[12:802]
+
+    if write_truncated_pdf:
+        original_pages = reader.pages[12:802]
+        original_pages = [original_page for original_page, text_page in zip(original_pages, pages) if text_page.strip() != '']
+
     # Remove empty pages
     pages = [page for page in pages if page.strip() != '']
     # Remove page headers
     pages = [utils.remove_header_favre(page) for page in pages]
+
+    if write_truncated_pdf:
+        writer = PdfWriter()
+        for page in original_pages:
+            writer.add_page(page)
+        writer.write(os.path.join(utils.BOOK_FOLDER, 'favre_truncated.pdf'))
 
     return pages
 
@@ -67,7 +80,7 @@ def split_favre(pages: list[str], page_separator: str = '\n') -> list[str]:
 def main():
 
     # Load and split the book
-    pages = load_and_clean_favre(book)
+    pages = load_and_clean_favre(book, write_truncated_pdf=True)
     chunks = split_favre(pages, page_separator='\n')
     # TODO: find a way to map those processed pages to original pages, or truncate pdf to reflect them directly
     chunk_pages = utils.chunks_page_span(chunks, pages, page_separator='\n')
