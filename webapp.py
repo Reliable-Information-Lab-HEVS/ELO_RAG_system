@@ -166,7 +166,7 @@ temperature = gr.Slider(0, 1, value=0.3, step=0.01, label='Temperature',
 # Define elements of the chatbot
 prompt = gr.Textbox(placeholder='Write your prompt here.', label='Prompt')
 output = gr.Chatbot(label='Conversation', height=500)
-pdf = PDF(label='Relevant pages')
+pdf = PDF(label='Relevant pages', visible=False)
 generate_button = gr.Button('▶️ Submit', variant='primary')
 continue_button = gr.Button('🔂 Continue', variant='primary')
 retry_button = gr.Button('🔄 Retry', variant='primary')
@@ -261,6 +261,9 @@ with demo:
     # Change visibility of generation parameters if we perform greedy search
     do_sample.input(lambda value: [gr.update(visible=value) for _ in range(3)], inputs=do_sample,
                     outputs=[top_k, top_p, temperature], queue=False, concurrency_limit=None)
+    
+    pdf.change(lambda value: gr.update(visible=value is not None), inputs=pdf, outputs=pdf, queue=False,
+               concurrency_limit=None)
     
     # Correctly display the model and quantization currently on memory if we refresh the page (instead of default
     # value for the elements) and correctly reset the chat output
