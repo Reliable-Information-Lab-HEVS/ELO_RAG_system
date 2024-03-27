@@ -27,21 +27,43 @@ DEFAULT_SYSTEM_PROMPT = (
 )
 
 
-DEFAULT_RAG_PROMPT = """Voici une question que l'utilisateur veut te poser :
+# DEFAULT_RAG_PROMPT = """Voici une question que l'utilisateur veut te poser :
 
-######## QUESTION ########
+# ######## QUESTION ########
+# {query}
+# ######## QUESTION ########
+
+# Pour t'aider à répondre à cette question, tu as accès au document suivant :
+
+# ######## DOCUMENT ########
+# {knowledge}
+# ######## DOCUMENT ########
+
+# Maintenant, réponds à l'utilisateur en t'aidant du document donné plus haut. Si les informations ne te \
+# permettent pas de répondre correctement à la question, ne les utilise pas."""
+
+
+DEFAULT_RAG_PROMPT = """######## QUESTION ########
 {query}
 ######## QUESTION ########
-
-Pour t'aider à répondre à cette question, tu as accès au document suivant :
 
 ######## DOCUMENT ########
 {knowledge}
 ######## DOCUMENT ########
 
-Maintenant, réponds à l'utilisateur en t'aidant du document donné plus haut. Si les informations ne te \
-permettent pas de répondre correctement à la question, ne les utilise pas."""
+En t'aidant du document donné, réponds à la question. Si le document ne te \
+permets pas de répondre correctement à la question, ne l'utilise pas."""
 
+
+FEW_SHOT_QUERIES = (
+    "Aide moi à comprendre les fonctions affines.",
+
+)
+
+
+FEW_SHOT_DOCUMENTS = (
+    ""
+)
 
 # Not clear if those kind of instructions will yield better results in English or French, even for 
 # queries only in French

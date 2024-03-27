@@ -8,39 +8,160 @@ system_prompt: You are MathBot, a virtual assistant designed to find relevant in
 
 few_shot_examples:
   - user: |-
-      What is the complexity of the following code snippet?:
-      ```python
-      for i, j in zip(range(10), range(7)):
-      print(i, j)
-      ```
-    model: The complexity if this code is O(1), meaning that it runs in a constant time independently of the input.
+      Voici une question que l'utilisateur veut te poser :
+
+      ######## QUESTION ########
+      Aide moi à comprendre les fonctions affines.
+      ######## QUESTION ########
+
+      Pour t'aider à répondre à cette question, tu as accès au document suivant :
+
+      ######## DOCUMENT ########
+      ∆xoù∆xest l’accroissement
+      selon l’axe des xet∆yest l’accroissement selon l’axe des y.
+      Pour trouver la pente d’une droite, on choisit sur cette droite 2 points (x1;y1)et(x2;y2), puis
+      on calcule :
+      a=∆y
+      ∆x=y2−y1
+      x2−x1
+      xy
+      x1 x2y1y2
+      ∆x∆y
+      Exemple 7.2
+      Calculer la pente de la droite représentée par le graphe ci-après :
+      x0y
+      A
+      B
+      Solution
+      Le point Aa comme coordonnées (0; 3)et le point Bles coordonnées (2; 1). Ainsi :
+      a=1−3
+      2−0=−2
+      2=−1
+      Remarque
+      La pente d’une droite s’exprime souvent en pour-cent comme c’est le cas des panneaux rou-
+      tiers :
+      Dans le cas d’une pente de 10%, cela signiﬁe que sur une distance horizontale de 100, on
+      monte d’une hauteur de 10. Attention, une pente de 100%, n’est pas une pente verticale
+      mais une pente de 45◦.
+      7.1.3 Droite passant par deux points
+      Pour déterminer l’équation y=ax+bou la fonction f(x) =ax+bd’une droite passant par
+      deux points A(x1;y1)etB(x2;y2), on commence par calculer la pente entre ces deux points :
+      a=y2−y1
+      x2−x1
+      puis
+      b=y1−ax1ou b=y2−ax2
+      Exemple 7.3
+      Déterminer l’équation de la droite y=ax+bpassant par les points (1; 5)et(3; 9)
+      Solution
+      La pente est donnée par :
+      a=9−5
+      3−1=4
+      2=2
+      L ’ordonnée à l’origine bpar :
+      b=5−2×1=3ou b=9−2×3=3
+      Ainsi l’équation de la droite s’écrit : y=2x+3
+      7.1.4 Fonction afﬁne par morceaux
+      Une fonction est dite aﬃne par morceaux si elle est déﬁnie sur plusieurs intervalles disjoints
+      par des fonctions aﬃnes.
+      Exemple 7.4
+      La fonction fdéﬁnie ci-dessous est une fonction aﬃne par morceaux :
+      f(x) =−x+8,six≥3
+      2x−1,six<3
+      f(x)
+      1
+      xy
+      3
+      La fonction valeur absolue est une représentation très courante de la fonction aﬃne déﬁnie
+      par morceaux comme suit :
+      1
+      xy
+      ######## DOCUMENT ########
+
+      Maintenant, réponds à l'utilisateur en t'aidant du document donné plus haut. Si les informations ne te permettent pas de répondre correctement à la question, ne les utilise pas.
+    model: |-
+      Bien sûr! Une fonction affine est une fonction qui a la forme d'une droite. Elle est définie par une pente et une ordonnée à l'origine sur l'axe des y (ou une valeur initiale).
+
+      Pour trouver la pente d'une droite, on choisit deux points sur cette droite et on calcule la différence entre les ordonnées divisée par la différence entre les abscisses. Cette opération donne la pente de la droite. Par exemple, dans l'exemple 7.2 du document, on choisit les points A(0,3) et B(2,1) pour trouver la pente de la droite représentée sur le graphe. La pente est donnée par la formule : a = (y2 - y1) / (x2 - x1).
+
+      Une fois la pente connue, on peut déterminer l'équation de la droite passant par deux points en utilisant l'ordonnée à l'origine. Il s'agit de la valeur de la fonction lorsque l'argument est nul. Dans l'exemple 7.3 du document, on cherche l'équation de la droite passant par les points (1,5) et (3,9). La pente est donnée par la formule : a = (y2 - y1) / (x2 - x1). L'ordonnée à l'origine est donnée par l'une des formules suivantes : b = y1 - ax1 ou b = y2 - ax2.
+
+      Une fonction affine peut également être définie par morceaux sur plusieurs intervalles disjoints. Dans l'exemple 7.4 du document, la fonction f(x) est définie par morceaux sur les intervalles ]-∞,3] et ]3,∞[.
+
+      J'espère que cela vous aide à mieux comprendre les fonctions affines. Si vous avez d'autres questions, n'hésitez pas à me contacter !
 
   - user: |-
-      Thanks! What is the complexity of the code below:
-      ```python
-      for i in range(10):
-        for j in range(7):
-          print(i, j)
-      ```
-    model: The complexity if this code is O(1), because there is a fixed amount of operations in the loop.
-
-- user: |-
-      What is the complexity of the following piece of code?
-      ```python
-      N = 100
-      tot = 0
-      for i in range(N):
-          tot += i
-      ```
-    model: Once again, the code complexity of this code is O(1). The time is constant.
+      Est-ce qu'il fait beau actuellement ?
+    model: |-
+      Je ne peux pas voir ou entendre le monde physique. J'existe uniquement dans le monde virtuel. Je ne peux pas répondre à votre question sur le temps présent et le temps météorologique. Je vous suggère de consulter une source de météorologie ou d'utiliser un service de prévision météorologique pour obtenir des informations sur le temps actuel.
 
   - user: |-
-      What about this snippet?
-      ```python
-      N = 100
-      for i in range(N):
-          for j in range(N):
-              for k in range(N):
-                  a = i*j*k
-      ```
-    model: As always, the code runs in constant time. That is, the complexity is O(1).
+      Voici une question que l'utilisateur veut te poser :
+
+      ######## QUESTION ########
+      Comment mesurer l'asymétrie ?
+      ######## QUESTION ########
+
+      Pour t'aider à répondre à cette question, tu as accès au document suivant :
+
+      ######## DOCUMENT ########
+      tribution statistique.
+      Distribution
+      symétriqueDistribution
+      asymétriqueDistribution
+      aplatieDistribution
+      pointue
+      Les calculs font intervenir les quartiles ainsi que des valeurs intermédiaires appelées moments
+      centrés.
+      Les moments centrés
+      On appelle moment centré d’ordre r(r∈N) d’une variable statistique Xle nombreµr
+      déﬁni comme suit :
+      Dans le cas d’une série de Nobservations, x1,x2,···,xN:
+      µr=1
+      NN∑
+      i=1(xi−x)r
+      Si les valeurs sont groupées en kclasses avec eﬀectifs :
+      µr=1
+      Nk∑
+      i=1ni(xi−x)r
+      Si les valeurs sont groupées en kclasses avec fréquences :
+      µr=k∑
+      i=1fi(xi−x)r
+      Exemple 23.8
+      Calculer les moments centrés d’ordre 1, 2 et 3 de la distribution statistique suivante :
+      xi1 5 10
+      fi0,5 0,3 0,2
+      Solution
+      On dresse un tableau contenant les colonnes fi(xi−x),fi(xi−x)2etfi(xi−x)3:
+      xi fi fixifi(xi−4)fi(xi−4)2fi(xi−4)3
+      1 0,5 0,5−1,5 4,5−13,5
+      5 0,3 1,5 0,3 0,3 0,3
+      10 0,2 2 1,2 7,2 43,2
+      T otal 1 x=4 0 12 30
+      Ainsi :
+      µ1=0µ2=12 etµ3=30
+      23.2.1 Mesure de l’asymétrie
+      Notion d’asymétrie
+      L ’asymétrie cherche à évaluer si la distribution est, par rapport à une valeur centrale, plus
+      étalée à gauche ou à droite, ou si, au contraire, les observations sont également réparties
+      de part et d’autre de cette valeur centrale. Si une distribution est asymétrique, les valeurs
+      centrales, telles que le mode, la médiane et la moyenne ne sont plus confondues au centre de
+      la distribution comme c’est le cas lors d’une distribution symétrique.
+      Étirement à gauche
+      Symétrique Étirement à droite
+      Il s’en suit :
+      distribution symétrique ⇒Mo=Me=x
+      distribution étirée à gauche ⇒Mo>Me>x
+      distribution étirée à droite ⇒Mo<Me<x
+      Principales mesures
+      Plusieurs mesures ont été proposées pour déterminer l’asymétrie d’une distribution. On re-
+      tiendra les 2 principales mesures suivantes :
+      lecoeﬃcient de Yule (CY):
+      CY=Q3+Q1−2Me
+      Q3−Q1
+      
+      ######## DOCUMENT ########
+
+      Maintenant, réponds à l'utilisateur en t'aidant du document donné plus haut. Si les informations ne te permettent pas de répondre correctement à la question, ne les utilise pas.
+    model: |-
+      
+    
