@@ -1,8 +1,5 @@
 import re
-
-import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 import torch
 import gradio as gr
@@ -11,6 +8,9 @@ from textwiz.templates import GenericConversation
 from textwiz.webapp import generator, chat_generation
 
 from templates import template
+from helpers import utils
+
+FAVRE_TRUNCATED = os.path.join(utils.BOOK_FOLDER, 'favre_truncated.pdf')
 
 
 def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model: textwiz.HFEmbeddingModel,
@@ -34,6 +34,8 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
     # TODO: replace this with nice threshold
     threshold = 0
 
+    pdf_path = None
+
     # If unrelated to the embeddings we have, just pass on the query
     if similarity < threshold:
         chat_model_input = user_query
@@ -42,14 +44,18 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
         # Find corresponding text and book pages
         knowledge = db_texts[indices.item()]
         pages = db_pages[indices.item()]
+        pdf_path = utils.create_temporary_pdf(FAVRE_TRUNCATED, pages)
 
         # Create model input
         chat_model_input = template.DEFAULT_RAG_PROMPT.format(query=user_query.strip(), knowledge=knowledge.strip())
 
+    
+
     # Yield tokens for gradio
-    yield from chat_generation(model=chat_model, conversation=conv, prompt=chat_model_input, max_new_tokens=max_new_tokens,
-                               do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, use_seed=False,
-                               seed=0, **kwargs)
+    for input, conv, chatbot in chat_generation(model=chat_model, conversation=conv, prompt=chat_model_input, max_new_tokens=max_new_tokens,
+                                                do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, use_seed=False,
+                                                seed=0, **kwargs):
+        yield input, conv, chatbot, pdf_path
     
 
 
@@ -80,8 +86,8 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
         user_query = last_prompt
 
     # Yield from chat_generation, but remove first value
-    for _, conv, chatbot in rag_augmented_generation(chat_model=chat_model, embedding_model=embedding_model, db_embeddings=db_embeddings,
-                                                     db_texts=db_texts, db_pages=db_pages, user_query=user_query,
-                                                     conv=conversation, max_new_tokens=max_new_tokens, do_sample=do_sample,
-                                                     top_k=top_k, top_p=top_p, temperature=temperature, **kwargs):
-        yield conv, chatbot
+    for _, conv, chatbot, pdf in rag_augmented_generation(chat_model=chat_model, embedding_model=embedding_model, db_embeddings=db_embeddings,
+                                                          db_texts=db_texts, db_pages=db_pages, user_query=user_query,
+                                                          conv=conversation, max_new_tokens=max_new_tokens, do_sample=do_sample,
+                                                          top_k=top_k, top_p=top_p, temperature=temperature, **kwargs):
+        yield conv, chatbot, pdf

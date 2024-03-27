@@ -1,8 +1,11 @@
 import os
 import re
 import json
+import uuid
+import tempfile
 
 import numpy as np
+from pypdf import PdfReader, PdfWriter
 
 # Path to the root
 ROOT_FOLDER = os.path.dirname(os.path.dirname(__file__))
@@ -12,6 +15,10 @@ DATA_FOLDER = os.path.join(ROOT_FOLDER, 'data')
 BOOK_FOLDER = os.path.join(DATA_FOLDER, 'books')
 
 EMBEDDING_FOLDER = os.path.join(DATA_FOLDER, 'embeddings')
+
+
+# Create temporary directory to store potential temporary pdf files that will be displayed
+TEMPDIR = tempfile.TemporaryDirectory(dir=BOOK_FOLDER).name
 
 
 def validate_filename(filename: str, extension: str):
@@ -209,3 +216,37 @@ def chunks_page_span(chunks: list[str], pages: list[str], page_separator: str = 
         all_pages_span.append(page_span)
 
     return all_pages_span
+
+
+def create_temporary_pdf(original_pdf_path: str, pages: list[int]) -> str:
+    """Create a temporary pdf file corresponding to given `pages` of the original pdf.
+
+    Parameters
+    ----------
+    original_pdf_path : str
+        Path to the original pdf.
+    pages : list[int]
+        Indices of the pages to save.
+
+    Returns
+    -------
+    str
+        Filename corresponding to the truncated pdf.
+    """
+
+    # Load pdf and extract text
+    reader = PdfReader(original_pdf_path)
+    L = len(reader.pages)
+
+    if not all([0 <= page < L for page in pages]):
+        raise ValueError('Some pages are outside the range of original pdf')
+
+    writer = PdfWriter()
+    for page_index in pages:
+        writer.add_page(reader.pages[page_index])
+
+    unique_filename = os.path.join(TEMPDIR, str(uuid.uuid4()) + '.pdf')
+    # Write pages
+    writer.write(unique_filename)
+
+    return unique_filename

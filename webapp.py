@@ -2,12 +2,9 @@ import os
 import argparse
 from collections import defaultdict
 
-import sys
-import sys
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
 import torch
 import gradio as gr
+from gradio_pdf import PDF
 import textwiz
 from textwiz.templates import GenericConversation
 from textwiz.webapp import generator
@@ -166,9 +163,10 @@ top_p = gr.Slider(0, 1, value=0.90, step=0.01, label='Top-p',
 temperature = gr.Slider(0, 1, value=0.3, step=0.01, label='Temperature',
                         info='How to cool down the probability distribution.')
 
-# Define elements of the chatbot Tab
+# Define elements of the chatbot
 prompt = gr.Textbox(placeholder='Write your prompt here.', label='Prompt')
 output = gr.Chatbot(label='Conversation', height=500)
+pdf = PDF(label='Relevant pages')
 generate_button = gr.Button('▶️ Submit', variant='primary')
 continue_button = gr.Button('🔂 Continue', variant='primary')
 retry_button = gr.Button('🔄 Retry', variant='primary')
@@ -211,6 +209,7 @@ with demo:
     # Main UI
     output.render()
     prompt.render()
+    pdf.render()
 
     with gr.Row():
         generate_button.render()
@@ -236,7 +235,7 @@ with demo:
 
     # Perform chat generation when clicking the button or pressing enter
     generate_event1 = gr.on(triggers=[generate_button.click, prompt.submit], fn=rag_generation, inputs=inputs_to_chatbot,
-                            outputs=[prompt, conversation, output], concurrency_id='generation')
+                            outputs=[prompt, conversation, output, pdf], concurrency_id='generation')
     # Add automatic callback on success
     generate_event1.success(logging_generation, inputs=inputs_to_callback, preprocess=False,
                             queue=False, concurrency_limit=None)
@@ -250,7 +249,7 @@ with demo:
     
     # Continue generation when clicking the button
     generate_event3 = retry_button.click(retry_rag_generation, inputs=inputs_to_chatbot_retry,
-                                         outputs=[conversation, output], concurrency_id='generation')
+                                         outputs=[conversation, output, pdf], concurrency_id='generation')
     # Add automatic callback on success
     generate_event3.success(logging_retry, inputs=inputs_to_callback, preprocess=False,
                             queue=False, concurrency_limit=None)

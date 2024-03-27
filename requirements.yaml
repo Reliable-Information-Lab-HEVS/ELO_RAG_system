@@ -18,6 +18,7 @@ dependencies:
     - huggingface-hub
     - optimum
     - gradio==4.21.0
+    - gradio_pdf
     - bitsandbytes
     - sentencepiece
     - protobuf
