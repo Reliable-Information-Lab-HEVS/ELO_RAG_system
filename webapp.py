@@ -209,13 +209,15 @@ with demo:
     # Main UI
     output.render()
     prompt.render()
-    pdf.render()
 
     with gr.Row():
         generate_button.render()
         continue_button.render()
         retry_button.render()
         clear_button.render()
+
+    # Relevant pdf pages
+    pdf.render()
             
     # Accordion for generation parameters
     with gr.Accordion("Text generation parameters", open=False):
