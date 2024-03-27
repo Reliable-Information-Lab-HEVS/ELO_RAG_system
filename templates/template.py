@@ -70,7 +70,7 @@ def formulate_query_for_embedding(query: str, task_description: str = DEFAULT_TA
 
 
 
-FEW_SHOT_EXAMPLES = (
+FEW_SHOT_EXAMPLES = [
 """######## QUESTION ########
 Aide moi à comprendre les fonctions affines.
 ######## QUESTION ########
@@ -208,10 +208,10 @@ Exercices d’application de la section 24.1
 ######## DOCUMENT ########
 
 En t'aidant du document donné, réponds à la question. Si le document ne te permets pas de répondre correctement à la question, ne l'utilise pas."""
-)
+]
 
 
-FEW_SHOT_ANSWERS = (
+FEW_SHOT_ANSWERS = [
 """Une fonction affine est une fonction qui possède une pente constante sur son graphe, et dont l'équation prend \
 la forme y = ax + b. Pour déterminer l'équation d'une droite passant par deux points, il faut calculer la pente entre ces \
 deux points et ensuite trouver l'ordonnée à l'origine. La pente est donnée par la formule a = (y2 - y1) / (x2 - x1), et \
@@ -231,4 +231,4 @@ différentes, en fonction des valeurs individuelles ou regroupées en classes. \
 
 Pour illustrer, dans l'exemple 24.10 on utilise la moyenne harmonique afin de déterminer la vitesse moyenne \
 (sur la totalité du trajet) d'un cycliste qui a parcouru un tronçon AB à 50 km/h et un tronçon BC à 20 km/h."""
-)
+]
