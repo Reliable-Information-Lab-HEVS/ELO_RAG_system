@@ -18,7 +18,7 @@ EMBEDDING_FOLDER = os.path.join(DATA_FOLDER, 'embeddings')
 
 
 # Create temporary directory to store potential temporary pdf files that will be displayed
-TEMPDIR = tempfile.TemporaryDirectory(dir=BOOK_FOLDER).name
+TEMPDIR = tempfile.TemporaryDirectory(dir=BOOK_FOLDER)
 
 
 def validate_filename(filename: str, extension: str):
@@ -245,7 +245,7 @@ def create_temporary_pdf(original_pdf_path: str, pages: list[int]) -> str:
     for page_index in pages:
         writer.add_page(reader.pages[page_index])
 
-    unique_filename = os.path.join(TEMPDIR, str(uuid.uuid4()) + '.pdf')
+    unique_filename = os.path.join(TEMPDIR.name, str(uuid.uuid4()) + '.pdf')
     # Write pages
     writer.write(unique_filename)
 
