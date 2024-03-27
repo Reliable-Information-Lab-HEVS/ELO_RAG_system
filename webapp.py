@@ -45,10 +45,11 @@ LOGGERS = defaultdict(gr.CSVLogger)
 def rag_generation(conversation: GenericConversation, prompt: str, max_new_tokens: int, do_sample: bool,
                     top_k: int, top_p: float, temperature: float) -> generator[tuple[str, GenericConversation, list[list]]]:
     
-    yield from rag_augmented_generation(chat_model=CHAT_MODEL, embedding_model=EMBEDDING_MODEL, db_embeddings=EMBEDDINGS,
+    for a,b,c in rag_augmented_generation(chat_model=CHAT_MODEL, embedding_model=EMBEDDING_MODEL, db_embeddings=EMBEDDINGS,
                                         db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, user_query=prompt,
                                         conv=conversation, max_new_tokens=max_new_tokens, do_sample=do_sample,
-                                        top_k=top_k, top_p=top_p, temperature=temperature)
+                                        top_k=top_k, top_p=top_p, temperature=temperature):
+        yield a,b,c
 
 
 def continue_generation(conversation: GenericConversation, additional_max_new_tokens: int, do_sample: bool,
