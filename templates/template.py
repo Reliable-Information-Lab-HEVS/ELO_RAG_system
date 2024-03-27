@@ -23,11 +23,11 @@ DEFAULT_SYSTEM_PROMPT = (
     "retrouver des informations pertinentes dans des documents et les transmettre à l'utilisateur.\n\nAssiste toujours avec le "
     "plus grand soin, en faisant preuve de respect et en disant la vérité. Réponds avec la plus grande utilité, mais tout en assurant "
     "la sécurité. Evite tout contenu nuisible, non éthique, préjudiciable ou négatif. Veille à ce que tes réponses soient positives "
-    "et favorisent l'équité. Réponds toujours en allant droit au but, et ne te répète jamais."
+    "et favorisent l'équité. Réponds toujours en allant droit au but, et ne te répète jamais. Parle uniquement en français."
 )
 
 
-DEFAULT_RAG_PROMPT = """Voici ma question :
+DEFAULT_RAG_PROMPT = """Voici une question :
 
 ######## QUESTION ########
 {query}
@@ -39,8 +39,8 @@ Pour t'aider à répondre à cette question, tu as accès au document suivant :
 {knowledge}
 ######## DOCUMENT ########
 
-Maintenant, réponds à ma question en t'aidant du document donné plus haut. Si les informations ne te \
-permettent pas de répondre correctement à ma question, ne les utilise pas."""
+Maintenant, réponds à la question en t'aidant du document donné plus haut. Si les informations ne te \
+permettent pas de répondre correctement à la question, ne les utilise pas."""
 
 
 # Not clear if those kind of instructions will yield better results in English or French, even for 
