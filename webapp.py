@@ -150,7 +150,7 @@ def logging_retry(*args):
     
 
 # Define general elements of the UI (generation parameters)
-similarity_threshold = gr.Slider(0, 1, value=0.2, step=0.01, label='Similarity threshold',
+similarity_threshold = gr.Slider(0, 1, value=0.65, step=0.01, label='Similarity threshold',
                                  info='Minimum cosine similarity to use RAG.')
 max_new_tokens = gr.Slider(32, 4096, value=2048, step=32, label='Max new tokens',
                            info='Maximum number of new tokens to generate.')
@@ -224,7 +224,8 @@ with demo:
     # Accordion for generation parameters
     with gr.Accordion("Text generation parameters", open=False):
         similarity_threshold.render()
-        do_sample.render()
+        with gr.Group():
+            do_sample.render()
         with gr.Group():
             max_new_tokens.render()
             max_additional_new_tokens.render()
