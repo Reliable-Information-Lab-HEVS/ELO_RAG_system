@@ -55,7 +55,7 @@ LOGGERS = defaultdict(gr.CSVLogger)
 def rag_generation(conversation: GenericConversation, prompt: str, max_new_tokens: int, do_sample: bool,
                     top_k: int, top_p: float, temperature: float) -> generator[tuple[str, GenericConversation, list[list]]]:
     
-    yield from textwiz.webapp.web_interface.chat_generation(CHAT_MODEL, prompt, max_new_tokens,
+    yield from textwiz.webapp.web_interface.chat_generation(CHAT_MODEL, conversation, prompt, max_new_tokens,
                     do_sample,top_k, top_p, temperature, False,0)
 
 
