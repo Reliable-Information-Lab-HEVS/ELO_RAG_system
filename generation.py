@@ -47,10 +47,9 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
         chat_model_input = template.DEFAULT_RAG_PROMPT.format(query=user_query.strip(), knowledge=knowledge.strip())
 
     # Yield tokens for gradio
-    for a,b,c in chat_generation(model=chat_model, conversation=conv, prompt=chat_model_input, max_new_tokens=max_new_tokens,
+    yield from chat_generation(model=chat_model, conversation=conv, prompt=chat_model_input, max_new_tokens=max_new_tokens,
                                do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, use_seed=False,
-                               seed=0, **kwargs):
-        yield a,b,c
+                               seed=0, **kwargs)
     
 
 
