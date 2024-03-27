@@ -2,11 +2,15 @@ import os
 import argparse
 from collections import defaultdict
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 import torch
 import gradio as gr
-from ..TextWiz import textwiz
-from ..TextWiz.textwiz.templates import GenericConversation
-from ..TextWiz.textwiz.webapp import generator
+from TextWiz import textwiz
+from TextWiz.textwiz.templates import GenericConversation
+from TextWiz.textwiz.webapp import generator
 
 from helpers import embedding_loader
 from templates.template import DEFAULT_SYSTEM_PROMPT
