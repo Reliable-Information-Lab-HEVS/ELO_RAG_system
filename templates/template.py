@@ -27,7 +27,7 @@ DEFAULT_SYSTEM_PROMPT = (
 )
 
 
-DEFAULT_RAG_PROMPT = """Voici une question :
+DEFAULT_RAG_PROMPT = """Voici une question que l'utilisateur veut te poser :
 
 ######## QUESTION ########
 {query}
@@ -39,7 +39,7 @@ Pour t'aider à répondre à cette question, tu as accès au document suivant :
 {knowledge}
 ######## DOCUMENT ########
 
-Maintenant, réponds à la question en t'aidant du document donné plus haut. Si les informations ne te \
+Maintenant, réponds à l'utilisateur en t'aidant du document donné plus haut. Si les informations ne te \
 permettent pas de répondre correctement à la question, ne les utilise pas."""
 
 
