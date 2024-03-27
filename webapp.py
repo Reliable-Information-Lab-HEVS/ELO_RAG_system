@@ -10,7 +10,7 @@ from textwiz.templates import GenericConversation
 from textwiz.webapp import generator
 
 from helpers import embedding_loader
-from templates.template import DEFAULT_SYSTEM_PROMPT
+from templates.template import DEFAULT_SYSTEM_PROMPT, FEW_SHOT_EXAMPLES, FEW_SHOT_ANSWERS
 from generation import rag_augmented_generation, retry_rag_augmented_generation
 
 # Disable analytics (can be set to anything except True really, we set it to False for readability)
@@ -30,6 +30,7 @@ def get_empty_conversation() -> GenericConversation:
     """Return an empty conversation given the currect model and optional chat template"""
     conv = CHAT_MODEL.get_empty_conversation()
     conv.set_system_prompt(DEFAULT_SYSTEM_PROMPT)
+    conv.set_few_shot_examples(FEW_SHOT_EXAMPLES, FEW_SHOT_ANSWERS)
     return conv
 
 # This will be a mapping between users and current conversation, to reload them with page reload
