@@ -2,55 +2,11 @@ import os
 import argparse
 
 import textwiz
-from pypdf import PdfReader, PdfWriter
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from helpers import utils
+from helpers import utils, book_loader
 
 DEFAULT_MODEL = 'SFR-Embedding-Mistral'
-
-FAVRE = os.path.join(utils.BOOK_FOLDER, 'favre.pdf')
-
-
-def load_and_clean_favre(path: str, write_truncated_pdf: bool = False) -> list[str]:
-    """Load and clean the book "MATHÉMATIQUES & STATISTIQUES DE GESTION" by Jean-Pierre Favre.
-
-    Parameters
-    ----------
-    path : str
-        Path to the pdf file.
-    write_truncated_pdf : bool, optional
-        Whether to also write the truncated pdf file for easy later page mapping.
-
-    Returns
-    -------
-    list[str]
-        All pages we keep from the book.
-    """
-
-    # Load pdf and extract text
-    reader = PdfReader(path)
-    pages = [reader.pages[i].extract_text(orientations=0) for i in range(len(reader.pages))]
-    # Remove first and last pages (index)
-    pages = pages[12:802]
-
-    if write_truncated_pdf:
-        original_pages = reader.pages[12:802]
-        original_pages = [original_page for original_page, text_page in zip(original_pages, pages) if text_page.strip() != '']
-
-    # Remove empty pages
-    pages = [page for page in pages if page.strip() != '']
-    # Remove page headers
-    pages = [utils.remove_header_favre(page) for page in pages]
-
-    if write_truncated_pdf:
-        writer = PdfWriter()
-        for page in original_pages:
-            writer.add_page(page)
-        writer.write(os.path.join(utils.BOOK_FOLDER, 'favre_truncated.pdf'))
-
-    return pages
-
 
 
 def split_book(tokenizer, pages: list[str], page_separator: str = '\n', chunk_size: int = 1024,
@@ -184,7 +140,8 @@ def embed_book(model: textwiz.HFEmbeddingModel, book_pages: list[str], book_name
 
     # Format the chunks and pages as dictionary to save as jsonl
     chunks_dic = [{'text': chunk} for chunk in chunks]
-    page_mapping_dic = [{book_name: pages} for pages in chunk_pages]
+    book_for_page_mapping = os.path.join(utils.BOOK_FOLDER, book_name + '_truncated.pdf')
+    page_mapping_dic = [{book_for_page_mapping: pages} for pages in chunk_pages]
 
     # Save embeddings, chunks, and chunks page mapping
     utils.save_npy(embeddings, os.path.join(output_folder, 'embeddings.npy'))
@@ -198,23 +155,21 @@ def main(chunk_size: int, chunk_overlap: int, page_separator: str = '\n', max_ba
 
     Parameters
     ----------
-    chunk_size : int
-        _description_
-    chunk_overlap : int
-        _description_
+    chunk_size : int, optional
+        The chunk size to use (number of tokens), by default 1024
+    chunk_overlap : int, optional
+        The chunk overlap to use (number of tokens), by default 256
     page_separator : str, optional
-        _description_, by default '\n'
+        Character used to separate pages, by default '\n'
     max_batch_size : int, optional
-        _description_, by default 20
+        Maximum batch size to use to compute the embeddings, by default 20
     """
-
-    book_names = ['favre']
-    book_pages = [load_and_clean_favre(FAVRE, write_truncated_pdf=True)]
 
     # Load model
     model = textwiz.HFEmbeddingModel(DEFAULT_MODEL)
 
-    for pages, name in zip(book_pages, book_names):
+    for name, loader in book_loader.LOADER.items():
+        pages = loader(save=True)
         embed_book(model, pages, name, page_separator=page_separator, chunk_size=chunk_size, chunk_overlap=chunk_overlap,
                    max_batch_size=max_batch_size)
     

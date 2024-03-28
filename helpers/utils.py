@@ -127,36 +127,6 @@ def load_npy(filename: str) -> np.ndarray:
     return np.load(filename, allow_pickle=False)
 
 
-def remove_header_favre(page: str) -> str:
-    """Remove the page header of the book "MATHÉMATIQUES & STATISTIQUES DE GESTION" by Jean-Pierre Favre.
-
-    Parameters
-    ----------
-    page : str
-        Page of the book.
-
-    Returns
-    -------
-    str
-        The page without the header.
-    """
-
-    try:
-        first_line, remaining_page = page.split('\n', 1)
-    # In case we do not find any new lign character -> not enough values to unpack error
-    except ValueError:
-        first_line = page
-        remaining_page = ''
-
-    odd_page_header_template = r'^[0-9]{0,3}– Mathématiques et statistiques de gestion'
-    even_page_header_template = r'^Chapitre [0-9]{1,2} – .* – [0-9]{0,3}'
-
-    if re.search(odd_page_header_template, first_line) or re.search(even_page_header_template, first_line):
-        return remaining_page
-    else:
-        return first_line + '\n' + remaining_page
-
-
 def create_temporary_pdf(original_pdf_path: str, pages: list[int]) -> str:
     """Create a temporary pdf file corresponding to given `pages` of the original pdf.
 
