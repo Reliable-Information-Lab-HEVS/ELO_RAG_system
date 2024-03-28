@@ -53,7 +53,7 @@ def rag_generation(conversation: GenericConversation, prompt: str, chatbot_outpu
 def continue_generation(conversation: GenericConversation, chatbot_output: list[list], additional_max_new_tokens: int, do_sample: bool,
                         top_k: int, top_p: float, temperature: float) -> generator[tuple[GenericConversation, list[list]]]:
     
-    yield from continuation(model=CHAT_MODEL, conversation=conversation, chatbot_output=chatbot_output,
+    yield from continuation(chat_model=CHAT_MODEL, conversation=conversation, chatbot_output=chatbot_output,
                             additional_max_new_tokens=additional_max_new_tokens, do_sample=do_sample, top_k=top_k,
                             top_p=top_p, temperature=temperature)
 
