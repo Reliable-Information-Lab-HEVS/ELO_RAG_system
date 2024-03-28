@@ -12,8 +12,9 @@ from helpers import utils
 
 def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model: textwiz.HFEmbeddingModel,
                              db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[dict],
-                             user_query: str, conv: GenericConversation, similarity_threshold: float, max_new_tokens: int,
-                             do_sample: bool, top_k: int, top_p: float, temperature: float, **kwargs) -> generator[tuple[str, GenericConversation, list[list]]]:
+                             user_query: str, conv: GenericConversation, chatbot_output: list[list], similarity_threshold: float,
+                             max_new_tokens: int, do_sample: bool, top_k: int, top_p: float, temperature: float,
+                             **kwargs) -> generator[tuple[str, GenericConversation, list[list]]]:
     
     formatted_query = template.formulate_query_for_embedding(user_query.strip())
     query_embedding = embedding_model(formatted_query)
@@ -44,20 +45,21 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
         # Create model input
         chat_model_input = template.DEFAULT_RAG_PROMPT.format(query=user_query.strip(), knowledge=knowledge.strip())
 
-    
+    chatbot_output.append([user_query, None])
 
     # Yield tokens for gradio
     for input, conv, chatbot in chat_generation(model=chat_model, conversation=conv, prompt=chat_model_input, max_new_tokens=max_new_tokens,
                                                 do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, use_seed=False,
                                                 seed=0, **kwargs):
-        yield input, conv, chatbot, pdf_element
+        gradio_output[-1][1] = chatbot[-1][1]
+        yield input, conv, chatbot_output, chatbot_output, pdf_element
     
 
 
 def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model: textwiz.HFEmbeddingModel,
                                    db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[dict],
-                                   conversation: GenericConversation, similarity_threshold: float, max_new_tokens: int,
-                                   do_sample: bool, top_k: int, top_p: float, temperature: float, **kwargs):
+                                   conversation: GenericConversation, chatbot_output: list[list], similarity_threshold: float,
+                                   max_new_tokens: int, do_sample: bool, top_k: int, top_p: float, temperature: float, **kwargs):
 
     if len(conversation) == 0:
         gr.Warning(f'You cannot retry generation on an empty conversation.')
@@ -72,6 +74,7 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
     last_prompt = conversation.user_history_text[-1]
     _ = conversation.user_history_text.pop(-1)
     _ = conversation.model_history_text.pop(-1)
+    _ = chatbot_output.pop(-1)
 
     # Extract last user_query from formatted prompt
     if '######## QUESTION ########' in last_prompt:
@@ -81,8 +84,10 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
         user_query = last_prompt
 
     # Yield from chat_generation, but remove first value
-    for _, conv, chatbot, pdf in rag_augmented_generation(chat_model=chat_model, embedding_model=embedding_model, db_embeddings=db_embeddings,
+    for _, conv, output, output1, pdf in rag_augmented_generation(chat_model=chat_model, embedding_model=embedding_model, db_embeddings=db_embeddings,
                                                           db_texts=db_texts, db_pages=db_pages, user_query=user_query,
                                                           conv=conversation, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens,
                                                           do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, **kwargs):
-        yield conv, chatbot, pdf
+        yield conv, output, output1, pdf
+
+

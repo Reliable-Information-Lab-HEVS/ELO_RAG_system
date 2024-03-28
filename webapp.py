@@ -40,12 +40,12 @@ CACHED_CONVERSATIONS = defaultdict(get_empty_conversation)
 LOGGERS = defaultdict(gr.CSVLogger)
 
 
-def rag_generation(conversation: GenericConversation, prompt: str, similarity_threshold: float, max_new_tokens: int, do_sample: bool,
-                    top_k: int, top_p: float, temperature: float) -> generator[tuple[str, GenericConversation, list[list]]]:
+def rag_generation(conversation: GenericConversation, prompt: str, chatbot_output: list[list], similarity_threshold: float,
+                   max_new_tokens: int, do_sample: bool, top_k: int, top_p: float, temperature: float) -> generator[tuple[str, GenericConversation, list[list]]]:
     
     yield from rag_augmented_generation(chat_model=CHAT_MODEL, embedding_model=EMBEDDING_MODEL, db_embeddings=EMBEDDINGS,
                                         db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, user_query=prompt,
-                                        conv=conversation, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens,
+                                        conv=conversation, chatbot_output=chatbot_output, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens,
                                         do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature)
 
 
@@ -58,12 +58,12 @@ def continue_generation(conversation: GenericConversation, additional_max_new_to
                                                   use_seed=False, seed=0)
 
 
-def retry_rag_generation(conversation: GenericConversation, similarity_threshold: float, max_new_tokens: int, do_sample: bool,
+def retry_rag_generation(conversation: GenericConversation, chatbot_output: list[list], similarity_threshold: float, max_new_tokens: int, do_sample: bool,
                          top_k: int, top_p: float, temperature: float) -> generator[tuple[GenericConversation, list[list]]]:
     
     yield from retry_rag_augmented_generation(chat_model=CHAT_MODEL, embedding_model=EMBEDDING_MODEL, db_embeddings=EMBEDDINGS,
                                               db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, conversation=conversation,
-                                              similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens, do_sample=do_sample,
+                                              chatbot_output=chatbot_output, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens, do_sample=do_sample,
                                               top_k=top_k, top_p=top_p, temperature=temperature)
 
 
@@ -177,15 +177,17 @@ clear_button = gr.Button('🗑 Clear')
 
 # Initial value does not matter -> will be set correctly at loading time
 conversation = gr.State(GenericConversation('</s>'))
+# This needs to be different from the conversation to hide prompt formulation
+chatbot_output = gr.State([])
 # Define NON-VISIBLE elements: they are only used to keep track of variables and save them to the callback (States
 # cannot be used in callbacks).
 username = gr.Textbox('', label='Username', visible=False)
 conv_id = gr.Textbox('', label='Conversation id', visible=False)
 
 # Define the inputs for the main inference
-inputs_to_chatbot = [conversation, prompt, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
-inputs_to_chatbot_continuation = [conversation, max_additional_new_tokens, do_sample, top_k, top_p, temperature]
-inputs_to_chatbot_retry = [conversation, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
+inputs_to_chatbot = [conversation, prompt, chatbot_output, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
+inputs_to_chatbot_continuation = [conversation, chatbot_output, max_additional_new_tokens, do_sample, top_k, top_p, temperature]
+inputs_to_chatbot_retry = [conversation, chatbot_output, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
 
 # Define inputs for the logging callbacks
 inputs_to_callback = [username, output, conv_id, max_new_tokens, max_additional_new_tokens, do_sample,
@@ -195,8 +197,9 @@ inputs_to_callback = [username, output, conv_id, max_new_tokens, max_additional_
 prompt_examples = [
     "Qu'est-ce que la notation scientifique ?",
     "Qui es-tu ?",
-    "Aide moi à comprendre les fonctions affines.",
-    "Je ne comprends rien aux inéquations. Peux-tu m'aider ?"
+    "C'est quoi l'indice de Fischer ?",
+    "Je ne comprends rien aux inéquations. Peux-tu m'aider ?",
+    "Rappelle moi ce qu'est un espace de probabilités."
 ]
 
 
@@ -206,6 +209,7 @@ with demo:
 
     # state variables
     conversation.render()
+    chatbot_output.render()
     username.render()
     conv_id.render()
 
@@ -242,21 +246,21 @@ with demo:
 
     # Perform chat generation when clicking the button or pressing enter
     generate_event1 = gr.on(triggers=[generate_button.click, prompt.submit], fn=rag_generation, inputs=inputs_to_chatbot,
-                            outputs=[prompt, conversation, output, pdf], concurrency_id='generation')
+                            outputs=[prompt, conversation, output, chatbot_output, pdf], concurrency_id='generation')
     # Add automatic callback on success
     generate_event1.success(logging_generation, inputs=inputs_to_callback, preprocess=False,
                             queue=False, concurrency_limit=None)
     
     # Continue generation when clicking the button
     generate_event2 = continue_button.click(continue_generation, inputs=inputs_to_chatbot_continuation,
-                                            outputs=[conversation, output], concurrency_id='generation')
+                                            outputs=[conversation, output, chatbot_output], concurrency_id='generation')
     # Add automatic callback on success
     generate_event2.success(logging_continuation, inputs=inputs_to_callback, preprocess=False,
                             queue=False, concurrency_limit=None)
     
     # Continue generation when clicking the button
     generate_event3 = retry_button.click(retry_rag_generation, inputs=inputs_to_chatbot_retry,
-                                         outputs=[conversation, output, pdf], concurrency_id='generation')
+                                         outputs=[conversation, output, chatbot_output, pdf], concurrency_id='generation')
     # Add automatic callback on success
     generate_event3.success(logging_retry, inputs=inputs_to_callback, preprocess=False,
                             queue=False, concurrency_limit=None)
