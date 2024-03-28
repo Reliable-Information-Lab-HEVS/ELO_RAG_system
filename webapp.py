@@ -219,7 +219,8 @@ réponse seront affichées à l'écran pour vous permettre d'obtenir plus de con
 veracité de la réponse.
                 
 ⛔️ **Limitations :** Les pdfs qui s'affichent à l'écran apparaissent flous. Cela est une conséquence direct d'un bug \
-dans le front-end que je ne peux pas facilement contourner.""")
+dans le front-end que je ne peux pas facilement contourner.
+De plus, ils prennent parfois un certain temps à charger.""")
 
 
     # state variables
