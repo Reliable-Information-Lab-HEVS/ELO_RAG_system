@@ -11,7 +11,7 @@ from textwiz.webapp import generator
 
 from helpers import embedding_loader
 from templates.template import DEFAULT_SYSTEM_PROMPT, FEW_SHOT_EXAMPLES, FEW_SHOT_ANSWERS
-from generation import rag_augmented_generation, retry_rag_augmented_generation
+from generation import rag_augmented_generation, retry_rag_augmented_generation, continuation
 
 # Disable analytics (can be set to anything except True really, we set it to False for readability)
 os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
@@ -50,12 +50,12 @@ def rag_generation(conversation: GenericConversation, prompt: str, chatbot_outpu
 
 
 
-def continue_generation(conversation: GenericConversation, additional_max_new_tokens: int, do_sample: bool,
+def continue_generation(conversation: GenericConversation, chatbot_output: list[list], additional_max_new_tokens: int, do_sample: bool,
                         top_k: int, top_p: float, temperature: float) -> generator[tuple[GenericConversation, list[list]]]:
     
-    yield from textwiz.webapp.continue_generation(model=CHAT_MODEL, conversation=conversation, additional_max_new_tokens=additional_max_new_tokens,
-                                                  do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature,
-                                                  use_seed=False, seed=0)
+    yield from continuation(model=CHAT_MODEL, conversation=conversation, chatbot_output=chatbot_output,
+                            additional_max_new_tokens=additional_max_new_tokens, do_sample=do_sample, top_k=top_k,
+                            top_p=top_p, temperature=temperature)
 
 
 def retry_rag_generation(conversation: GenericConversation, chatbot_output: list[list], similarity_threshold: float, max_new_tokens: int, do_sample: bool,

@@ -4,7 +4,7 @@ import torch
 import gradio as gr
 import textwiz
 from textwiz.templates import GenericConversation
-from textwiz.webapp import generator, chat_generation
+from textwiz.webapp import generator, chat_generation, continue_generation
 
 from templates import template
 from helpers import utils
@@ -91,4 +91,12 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
         yield conv, output, output1, pdf
 
 
-# def continuation()
+
+def continuation(chat_model: textwiz.HFCausalModel, conversation: GenericConversation, chatbot_output: list[list],
+                 additional_max_new_tokens: int, do_sample: bool, top_k: int, top_p: float,
+                 temperature: float, **kwargs):
+    
+    for conv, output in continue_generation(chat_model, conversation, additional_max_new_tokens, do_sample,
+                                            top_k, top_p, temperature, False, 0, **kwargs):
+        chatbot_output[-1][1] = output[-1][1]
+        yield conv, chatbot_output, chatbot_output
