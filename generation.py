@@ -51,7 +51,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
     for input, conv, chatbot in chat_generation(model=chat_model, conversation=conv, prompt=chat_model_input, max_new_tokens=max_new_tokens,
                                                 do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, use_seed=False,
                                                 seed=0, **kwargs):
-        gradio_output[-1][1] = chatbot[-1][1]
+        chatbot_output[-1][1] = chatbot[-1][1]
         yield input, conv, chatbot_output, chatbot_output, pdf_element
     
 
@@ -91,3 +91,4 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
         yield conv, output, output1, pdf
 
 
+def continuation()
