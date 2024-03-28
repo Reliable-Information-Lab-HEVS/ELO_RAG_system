@@ -86,7 +86,7 @@ def clear_chatbot(username: str) -> tuple[GenericConversation, str, list[list]]:
     if username != '':
         CACHED_CONVERSATIONS[username] = conversation
 
-    return conversation, conversation.to_gradio_format(), conversation.id, gr.update(visible=False)
+    return conversation, conversation.to_gradio_format(), [], conversation.id, gr.update(visible=False)
 
 
 
@@ -266,7 +266,7 @@ with demo:
                             queue=False, concurrency_limit=None)
     
     # Clear the prompt and output boxes when clicking the button
-    clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, conv_id, pdf],
+    clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, chatbot_output, conv_id, pdf],
                        queue=False, concurrency_limit=None)
 
     # Change visibility of generation parameters if we perform greedy search
