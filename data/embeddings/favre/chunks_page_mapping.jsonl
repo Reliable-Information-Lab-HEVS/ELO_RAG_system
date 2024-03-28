@@ -1,697 +1,697 @@
-{"pages": [0, 1, 2]}
-{"pages": [2, 3, 4]}
-{"pages": [3, 4, 5]}
-{"pages": [5, 6]}
-{"pages": [6, 7]}
-{"pages": [7, 8, 9]}
-{"pages": [8, 9, 10]}
-{"pages": [10, 11]}
-{"pages": [11, 12]}
-{"pages": [12, 13]}
-{"pages": [13, 14]}
-{"pages": [14, 15]}
-{"pages": [15, 16]}
-{"pages": [16, 17, 18]}
-{"pages": [17, 18, 19]}
-{"pages": [19, 20]}
-{"pages": [19, 20, 21]}
-{"pages": [21, 22]}
-{"pages": [22, 23, 24]}
-{"pages": [23, 24, 25]}
-{"pages": [25, 26]}
-{"pages": [26, 27]}
-{"pages": [27, 28]}
-{"pages": [28, 29]}
-{"pages": [29, 30]}
-{"pages": [30, 31, 32]}
-{"pages": [31, 32, 33]}
-{"pages": [32, 33, 34]}
-{"pages": [33, 34, 35]}
-{"pages": [34, 35, 36]}
-{"pages": [36, 37]}
-{"pages": [37, 38, 39]}
-{"pages": [38, 39, 40]}
-{"pages": [39, 40, 41]}
-{"pages": [41, 42]}
-{"pages": [41, 42, 43]}
-{"pages": [42, 43, 44]}
-{"pages": [43, 44, 45]}
-{"pages": [45, 46, 47]}
-{"pages": [46, 47, 48]}
-{"pages": [48, 49]}
-{"pages": [49, 50]}
-{"pages": [50, 51, 52]}
-{"pages": [51, 52, 53]}
-{"pages": [53, 54]}
-{"pages": [54, 55]}
-{"pages": [55, 56, 57]}
-{"pages": [56, 57, 58]}
-{"pages": [57, 58, 59]}
-{"pages": [59, 60]}
-{"pages": [60, 61]}
-{"pages": [61, 62, 63]}
-{"pages": [62, 63, 64]}
-{"pages": [64, 65]}
-{"pages": [65, 66]}
-{"pages": [66, 67, 68]}
-{"pages": [67, 68, 69]}
-{"pages": [69, 70]}
-{"pages": [70, 71, 72]}
-{"pages": [71, 72, 73]}
-{"pages": [73, 74, 75]}
-{"pages": [74, 75, 76]}
-{"pages": [76, 77]}
-{"pages": [77, 78]}
-{"pages": [78, 79]}
-{"pages": [78, 79, 80]}
-{"pages": [80, 81, 82]}
-{"pages": [81, 82, 83]}
-{"pages": [83, 84, 85]}
-{"pages": [84, 85, 86, 87]}
-{"pages": [86, 87, 88]}
-{"pages": [88, 89, 90]}
-{"pages": [89, 90, 91]}
-{"pages": [91, 92]}
-{"pages": [92, 93, 94]}
-{"pages": [93, 94, 95]}
-{"pages": [95, 96]}
-{"pages": [96, 97]}
-{"pages": [97, 98]}
-{"pages": [98, 99, 100]}
-{"pages": [99, 100, 101, 102]}
-{"pages": [101, 102, 103]}
-{"pages": [103, 104, 105]}
-{"pages": [105, 106]}
-{"pages": [106, 107]}
-{"pages": [107, 108, 109]}
-{"pages": [109, 110]}
-{"pages": [110, 111]}
-{"pages": [111, 112, 113]}
-{"pages": [112, 113, 114]}
-{"pages": [114, 115]}
-{"pages": [114, 115, 116]}
-{"pages": [116, 117, 118]}
-{"pages": [118, 119, 120]}
-{"pages": [119, 120, 121]}
-{"pages": [121, 122, 123]}
-{"pages": [122, 123, 124]}
-{"pages": [124, 125]}
-{"pages": [124, 125, 126]}
-{"pages": [126, 127, 128]}
-{"pages": [127, 128, 129]}
-{"pages": [128, 129, 130]}
-{"pages": [129, 130]}
-{"pages": [130, 131]}
-{"pages": [132, 133, 134]}
-{"pages": [133, 134, 135]}
-{"pages": [134, 135, 136]}
-{"pages": [136, 137]}
-{"pages": [137, 138, 139]}
-{"pages": [138, 139, 140]}
-{"pages": [139, 140, 141]}
-{"pages": [141, 142]}
-{"pages": [142, 143]}
-{"pages": [143, 144]}
-{"pages": [144, 145]}
-{"pages": [145, 146, 147]}
-{"pages": [146, 147, 148]}
-{"pages": [147, 148, 149]}
-{"pages": [149, 150]}
-{"pages": [150, 151]}
-{"pages": [151, 152]}
-{"pages": [152, 153]}
-{"pages": [153, 154]}
-{"pages": [154, 155, 156]}
-{"pages": [155, 156, 157]}
-{"pages": [157, 158]}
-{"pages": [158, 159]}
-{"pages": [159, 160, 161]}
-{"pages": [160, 161, 162]}
-{"pages": [162, 163]}
-{"pages": [163, 164]}
-{"pages": [164, 165, 166]}
-{"pages": [166, 167, 168]}
-{"pages": [167, 168, 169]}
-{"pages": [168, 169, 170]}
-{"pages": [170, 171]}
-{"pages": [171, 172, 173]}
-{"pages": [172, 173, 174]}
-{"pages": [174, 175, 176]}
-{"pages": [175, 176, 177]}
-{"pages": [176, 177]}
-{"pages": [177, 178, 179]}
-{"pages": [178, 179, 180]}
-{"pages": [179, 180, 181]}
-{"pages": [181, 182]}
-{"pages": [182, 183, 184]}
-{"pages": [183, 184, 185]}
-{"pages": [185, 186, 187]}
-{"pages": [186, 187, 188]}
-{"pages": [187, 188, 189]}
-{"pages": [189, 190, 191, 192]}
-{"pages": [191, 192, 193]}
-{"pages": [192, 193]}
-{"pages": [193, 194]}
-{"pages": [194]}
-{"pages": [194, 195, 196]}
-{"pages": [195, 196, 197]}
-{"pages": [196, 197, 198]}
-{"pages": [197, 198, 199]}
-{"pages": [199, 200]}
-{"pages": [200, 201, 202]}
-{"pages": [201, 202, 203]}
-{"pages": [202, 203, 204]}
-{"pages": [203, 204, 205]}
-{"pages": [205, 206]}
-{"pages": [206, 207]}
-{"pages": [207, 208]}
-{"pages": [208, 209]}
-{"pages": [209, 210]}
-{"pages": [210]}
-{"pages": [211, 212]}
-{"pages": [211, 212, 213]}
-{"pages": [212, 213, 214, 215]}
-{"pages": [213, 214, 215, 216]}
-{"pages": [216, 217]}
-{"pages": [217]}
-{"pages": [218, 219]}
-{"pages": [218, 219, 220]}
-{"pages": [219, 220, 221]}
-{"pages": [220, 221, 222]}
-{"pages": [221, 222, 223]}
-{"pages": [223, 224]}
-{"pages": [224]}
-{"pages": [225, 226]}
-{"pages": [226, 227]}
-{"pages": [226, 227, 228]}
-{"pages": [228, 229]}
-{"pages": [229, 230, 231]}
-{"pages": [230, 231, 232]}
-{"pages": [231, 232, 233]}
-{"pages": [233, 234]}
-{"pages": [234, 235]}
-{"pages": [235, 236]}
-{"pages": [236, 237, 238]}
-{"pages": [237, 238, 239]}
-{"pages": [239, 240]}
-{"pages": [240, 241]}
-{"pages": [241, 242]}
-{"pages": [242, 243]}
-{"pages": [243, 244]}
-{"pages": [244]}
-{"pages": [245]}
-{"pages": [245, 246]}
-{"pages": [246, 247, 248]}
-{"pages": [247, 248]}
-{"pages": [248, 249, 250]}
-{"pages": [249, 250, 251]}
-{"pages": [250, 251, 252]}
-{"pages": [251, 252, 253]}
-{"pages": [252, 253, 254]}
-{"pages": [253, 254]}
-{"pages": [254, 255]}
-{"pages": [255, 256]}
-{"pages": [256, 257]}
-{"pages": [257, 258, 259]}
-{"pages": [258, 259, 260]}
-{"pages": [259, 260, 261]}
-{"pages": [260, 261, 262]}
-{"pages": [262, 263]}
-{"pages": [263, 264]}
-{"pages": [264, 265]}
-{"pages": [265, 266]}
-{"pages": [266, 267]}
-{"pages": [267, 268]}
-{"pages": [268, 269]}
-{"pages": [269, 270]}
-{"pages": [269, 270]}
-{"pages": [270, 271]}
-{"pages": [271, 272]}
-{"pages": [272, 273]}
-{"pages": [273, 274]}
-{"pages": [274, 275]}
-{"pages": [275, 276]}
-{"pages": [276, 277]}
-{"pages": [278, 279, 280]}
-{"pages": [280, 281, 282]}
-{"pages": [281, 282, 283]}
-{"pages": [282, 283, 284]}
-{"pages": [284, 285]}
-{"pages": [285, 286]}
-{"pages": [286, 287]}
-{"pages": [286, 287, 288]}
-{"pages": [287, 288, 289]}
-{"pages": [288, 289]}
-{"pages": [289, 290]}
-{"pages": [290, 291]}
-{"pages": [291, 292]}
-{"pages": [292, 293]}
-{"pages": [293, 294, 295]}
-{"pages": [294, 295, 296]}
-{"pages": [296, 297]}
-{"pages": [297, 298]}
-{"pages": [298, 299, 300]}
-{"pages": [300, 301]}
-{"pages": [301, 302]}
-{"pages": [302, 303, 304]}
-{"pages": [303, 304, 305]}
-{"pages": [305, 306]}
-{"pages": [306, 307]}
-{"pages": [306, 307, 308]}
-{"pages": [307, 308, 309]}
-{"pages": [309, 310]}
-{"pages": [310, 311, 312]}
-{"pages": [311, 312]}
-{"pages": [312, 313, 314]}
-{"pages": [313, 314, 315]}
-{"pages": [314, 315, 316]}
-{"pages": [316, 317]}
-{"pages": [317, 318]}
-{"pages": [318, 319]}
-{"pages": [319, 320]}
-{"pages": [320, 321]}
-{"pages": [321, 322]}
-{"pages": [321, 322, 323]}
-{"pages": [323, 324]}
-{"pages": [324, 325]}
-{"pages": [325, 326, 327]}
-{"pages": [326, 327, 328]}
-{"pages": [328, 329]}
-{"pages": [329, 330]}
-{"pages": [330, 331]}
-{"pages": [331, 332]}
-{"pages": [332]}
-{"pages": [332, 333, 334]}
-{"pages": [333, 334, 335]}
-{"pages": [334, 335]}
-{"pages": [336, 337]}
-{"pages": [336, 337]}
-{"pages": [338, 339, 340]}
-{"pages": [339, 340, 341]}
-{"pages": [340, 341, 342]}
-{"pages": [341, 342, 343]}
-{"pages": [343, 344]}
-{"pages": [344, 345, 346]}
-{"pages": [345, 346]}
-{"pages": [346, 347]}
-{"pages": [347, 348, 349]}
-{"pages": [348, 349]}
-{"pages": [350, 351, 352]}
-{"pages": [351, 352, 353]}
-{"pages": [352, 353, 354]}
-{"pages": [353, 354, 355]}
-{"pages": [354, 355, 356]}
-{"pages": [356, 357]}
-{"pages": [357, 358]}
-{"pages": [358, 359, 360]}
-{"pages": [359, 360, 361]}
-{"pages": [360, 361]}
-{"pages": [361, 362, 363]}
-{"pages": [362, 363, 364]}
-{"pages": [363, 364]}
-{"pages": [364, 365, 366]}
-{"pages": [366, 367]}
-{"pages": [367, 368, 369]}
-{"pages": [368, 369, 370]}
-{"pages": [370, 371]}
-{"pages": [371, 372]}
-{"pages": [372, 373]}
-{"pages": [373, 374, 375]}
-{"pages": [374, 375, 376]}
-{"pages": [376, 377]}
-{"pages": [376, 377, 378]}
-{"pages": [377, 378]}
-{"pages": [378, 379]}
-{"pages": [379, 380]}
-{"pages": [380, 381, 382]}
-{"pages": [382, 383]}
-{"pages": [383, 384, 385]}
-{"pages": [384, 385, 386]}
-{"pages": [386, 387]}
-{"pages": [387, 388]}
-{"pages": [388]}
-{"pages": [389, 390]}
-{"pages": [389, 390]}
-{"pages": [390, 391, 392]}
-{"pages": [391, 392, 393]}
-{"pages": [393, 394, 395]}
-{"pages": [394, 395, 396]}
-{"pages": [396, 397]}
-{"pages": [397, 398, 399]}
-{"pages": [398, 399, 400]}
-{"pages": [400, 401]}
-{"pages": [401, 402]}
-{"pages": [402, 403]}
-{"pages": [403, 404]}
-{"pages": [404, 405]}
-{"pages": [405, 406]}
-{"pages": [406, 407]}
-{"pages": [407, 408]}
-{"pages": [408, 409]}
-{"pages": [409, 410]}
-{"pages": [410, 411]}
-{"pages": [411, 412, 413]}
-{"pages": [412, 413, 414]}
-{"pages": [414, 415]}
-{"pages": [415, 416]}
-{"pages": [416, 417]}
-{"pages": [417, 418, 419]}
-{"pages": [418, 419, 420]}
-{"pages": [420, 421]}
-{"pages": [421, 422]}
-{"pages": [422, 423, 424]}
-{"pages": [424, 425]}
-{"pages": [425, 426]}
-{"pages": [426, 427]}
-{"pages": [427, 428]}
-{"pages": [428, 429]}
-{"pages": [429, 430, 431]}
-{"pages": [430, 431, 432]}
-{"pages": [431, 432]}
-{"pages": [432, 433, 434]}
-{"pages": [434, 435]}
-{"pages": [435, 436]}
-{"pages": [436, 437, 438]}
-{"pages": [437, 438, 439]}
-{"pages": [438, 439, 440]}
-{"pages": [440, 441, 442]}
-{"pages": [441, 442, 443]}
-{"pages": [442, 443, 444]}
-{"pages": [443, 444, 445]}
-{"pages": [445, 446, 447]}
-{"pages": [447, 448]}
-{"pages": [447, 448, 449]}
-{"pages": [448, 449, 450]}
-{"pages": [450, 451]}
-{"pages": [451, 452, 453]}
-{"pages": [452, 453, 454]}
-{"pages": [454, 455]}
-{"pages": [455, 456]}
-{"pages": [457, 458]}
-{"pages": [458, 459]}
-{"pages": [459, 460]}
-{"pages": [460, 461]}
-{"pages": [461, 462]}
-{"pages": [462, 463]}
-{"pages": [462, 463]}
-{"pages": [463, 464]}
-{"pages": [464, 465, 466]}
-{"pages": [465, 466, 467]}
-{"pages": [467, 468]}
-{"pages": [468, 469, 470]}
-{"pages": [469, 470, 471]}
-{"pages": [471, 472]}
-{"pages": [471, 472]}
-{"pages": [472, 473]}
-{"pages": [473, 474]}
-{"pages": [474, 475]}
-{"pages": [475, 476]}
-{"pages": [475, 476, 477, 478]}
-{"pages": [477, 478, 479]}
-{"pages": [479, 480]}
-{"pages": [480, 481]}
-{"pages": [480, 481]}
-{"pages": [481, 482]}
-{"pages": [482, 483]}
-{"pages": [483, 484]}
-{"pages": [484, 485]}
-{"pages": [485, 486]}
-{"pages": [486, 487]}
-{"pages": [487, 488]}
-{"pages": [487, 488, 489]}
-{"pages": [489, 490, 491]}
-{"pages": [490, 491, 492]}
-{"pages": [492, 493]}
-{"pages": [493, 494]}
-{"pages": [494, 495]}
-{"pages": [495, 496]}
-{"pages": [496, 497, 498]}
-{"pages": [497, 498, 499]}
-{"pages": [498, 499, 500]}
-{"pages": [499, 500, 501]}
-{"pages": [500, 501]}
-{"pages": [501, 502]}
-{"pages": [502, 503, 504]}
-{"pages": [503, 504, 505]}
-{"pages": [505, 506]}
-{"pages": [506, 507]}
-{"pages": [507, 508]}
-{"pages": [508, 509]}
-{"pages": [509, 510]}
-{"pages": [510, 511]}
-{"pages": [511, 512]}
-{"pages": [512, 513]}
-{"pages": [513, 514]}
-{"pages": [513, 514]}
-{"pages": [514, 515]}
-{"pages": [515, 516]}
-{"pages": [516, 517]}
-{"pages": [517, 518]}
-{"pages": [518, 519]}
-{"pages": [519, 520]}
-{"pages": [519, 520, 521]}
-{"pages": [520, 521, 522]}
-{"pages": [521, 522]}
-{"pages": [522, 523, 524, 525]}
-{"pages": [525, 526, 527]}
-{"pages": [526, 527, 528]}
-{"pages": [527, 528, 529]}
-{"pages": [529, 530]}
-{"pages": [530, 531]}
-{"pages": [531, 532, 533]}
-{"pages": [532, 533, 534]}
-{"pages": [533, 534, 535]}
-{"pages": [534, 535, 536]}
-{"pages": [536, 537]}
-{"pages": [537, 538]}
-{"pages": [538, 539]}
-{"pages": [539, 540]}
-{"pages": [540]}
-{"pages": [540, 541]}
-{"pages": [541, 542]}
-{"pages": [542, 543]}
-{"pages": [543, 544]}
-{"pages": [544, 545]}
-{"pages": [545, 546]}
-{"pages": [546, 547]}
-{"pages": [547, 548]}
-{"pages": [548, 549]}
-{"pages": [548, 549, 550]}
-{"pages": [550, 551]}
-{"pages": [551, 552]}
-{"pages": [552, 553, 554]}
-{"pages": [553, 554, 555]}
-{"pages": [554, 555, 556]}
-{"pages": [556, 557]}
-{"pages": [556, 557]}
-{"pages": [557, 558]}
-{"pages": [558, 559]}
-{"pages": [559, 560]}
-{"pages": [559, 560]}
-{"pages": [560, 561, 562]}
-{"pages": [561, 562, 563]}
-{"pages": [562, 563, 564]}
-{"pages": [564, 565]}
-{"pages": [565, 566]}
-{"pages": [566, 567]}
-{"pages": [566, 567]}
-{"pages": [567, 568]}
-{"pages": [568, 569]}
-{"pages": [569]}
-{"pages": [569, 570]}
-{"pages": [570, 571]}
-{"pages": [571, 572]}
-{"pages": [572, 573]}
-{"pages": [573, 574, 575]}
-{"pages": [575, 576]}
-{"pages": [576, 577]}
-{"pages": [577, 578]}
-{"pages": [578, 579]}
-{"pages": [579, 580, 581]}
-{"pages": [580, 581]}
-{"pages": [581, 582]}
-{"pages": [582, 583]}
-{"pages": [583, 584]}
-{"pages": [584, 585]}
-{"pages": [585, 586]}
-{"pages": [586, 587]}
-{"pages": [587, 588]}
-{"pages": [588, 589]}
-{"pages": [589, 590]}
-{"pages": [590, 591]}
-{"pages": [591, 592]}
-{"pages": [592, 593]}
-{"pages": [593, 594]}
-{"pages": [594, 595]}
-{"pages": [594, 595]}
-{"pages": [595, 596]}
-{"pages": [596, 597]}
-{"pages": [597]}
-{"pages": [598]}
-{"pages": [598, 599]}
-{"pages": [599, 600]}
-{"pages": [600, 601, 602]}
-{"pages": [601, 602, 603]}
-{"pages": [603, 604]}
-{"pages": [604, 605]}
-{"pages": [605, 606]}
-{"pages": [606, 607, 608]}
-{"pages": [607, 608, 609]}
-{"pages": [609, 610]}
-{"pages": [610, 611, 612]}
-{"pages": [611, 612, 613]}
-{"pages": [613, 614]}
-{"pages": [613, 614, 615]}
-{"pages": [614, 615, 616]}
-{"pages": [615, 616]}
-{"pages": [616, 617]}
-{"pages": [617, 618]}
-{"pages": [618, 619]}
-{"pages": [619, 620]}
-{"pages": [620, 621]}
-{"pages": [621, 622]}
-{"pages": [622, 623]}
-{"pages": [622, 623]}
-{"pages": [623, 624]}
-{"pages": [624, 625, 626]}
-{"pages": [625, 626]}
-{"pages": [626, 627]}
-{"pages": [627, 628]}
-{"pages": [628, 629, 630]}
-{"pages": [629, 630, 631]}
-{"pages": [630, 631]}
-{"pages": [631, 632]}
-{"pages": [632, 633]}
-{"pages": [633, 634]}
-{"pages": [634, 635]}
-{"pages": [635, 636]}
-{"pages": [636, 637]}
-{"pages": [636, 637, 638]}
-{"pages": [637, 638, 639]}
-{"pages": [639, 640]}
-{"pages": [640, 641]}
-{"pages": [641, 642]}
-{"pages": [642, 643]}
-{"pages": [643, 644]}
-{"pages": [644, 645]}
-{"pages": [645, 646]}
-{"pages": [646, 647]}
-{"pages": [646, 647, 648]}
-{"pages": [647, 648, 649, 650]}
-{"pages": [648, 649, 650, 651]}
-{"pages": [651, 652]}
-{"pages": [652, 653]}
-{"pages": [653, 654, 655]}
-{"pages": [654, 655]}
-{"pages": [655, 656]}
-{"pages": [656, 657]}
-{"pages": [657, 658]}
-{"pages": [657, 658, 659]}
-{"pages": [658, 659, 660]}
-{"pages": [660, 661]}
-{"pages": [661, 662]}
-{"pages": [662, 663]}
-{"pages": [662, 663, 664]}
-{"pages": [663, 664, 665]}
-{"pages": [665, 666]}
-{"pages": [666, 667]}
-{"pages": [667, 668]}
-{"pages": [668, 669]}
-{"pages": [669, 670]}
-{"pages": [670, 671]}
-{"pages": [671, 672]}
-{"pages": [671, 672]}
-{"pages": [672, 673]}
-{"pages": [673, 674]}
-{"pages": [673, 674, 675]}
-{"pages": [675, 676]}
-{"pages": [676, 677, 678]}
-{"pages": [677, 678, 679]}
-{"pages": [679, 680, 681]}
-{"pages": [680, 681, 682]}
-{"pages": [681, 682, 683]}
-{"pages": [682, 683, 684]}
-{"pages": [683, 684, 685]}
-{"pages": [684, 685, 686]}
-{"pages": [686, 687]}
-{"pages": [687, 688]}
-{"pages": [688, 689]}
-{"pages": [689, 690]}
-{"pages": [690, 691, 692]}
-{"pages": [692, 693]}
-{"pages": [693, 694]}
-{"pages": [694, 695]}
-{"pages": [694, 695, 696]}
-{"pages": [696]}
-{"pages": [696, 697]}
-{"pages": [697, 698]}
-{"pages": [697, 698, 699]}
-{"pages": [698, 699, 700, 701]}
-{"pages": [700, 701]}
-{"pages": [701, 702, 703]}
-{"pages": [702, 703, 704]}
-{"pages": [703, 704, 705]}
-{"pages": [704, 705]}
-{"pages": [705, 706]}
-{"pages": [706, 707]}
-{"pages": [707, 708]}
-{"pages": [707, 708]}
-{"pages": [708, 709]}
-{"pages": [709, 710, 711]}
-{"pages": [710, 711, 712]}
-{"pages": [711, 712, 713]}
-{"pages": [712, 713, 714]}
-{"pages": [714, 715]}
-{"pages": [714, 715, 716]}
-{"pages": [715, 716]}
-{"pages": [716, 717]}
-{"pages": [717, 718]}
-{"pages": [718, 719]}
-{"pages": [718, 719, 720]}
-{"pages": [719, 720, 721]}
-{"pages": [721, 722]}
-{"pages": [722, 723]}
-{"pages": [723, 724]}
-{"pages": [724, 725]}
-{"pages": [725, 726]}
-{"pages": [726, 727]}
-{"pages": [727, 728]}
-{"pages": [728]}
-{"pages": [729, 730]}
-{"pages": [730, 731]}
-{"pages": [731, 732]}
-{"pages": [732, 733, 734]}
-{"pages": [733, 734]}
-{"pages": [734, 735]}
-{"pages": [735, 736]}
-{"pages": [736, 737]}
-{"pages": [737, 738]}
-{"pages": [738, 739]}
-{"pages": [738, 739]}
-{"pages": [739, 740, 741]}
-{"pages": [740, 741, 742]}
-{"pages": [742, 743]}
-{"pages": [743, 744, 745]}
-{"pages": [744, 745, 746]}
-{"pages": [746, 747]}
-{"pages": [747, 748]}
-{"pages": [748, 749]}
-{"pages": [749, 750, 751]}
-{"pages": [750, 751, 752]}
-{"pages": [752, 753]}
-{"pages": [753, 754]}
-{"pages": [753, 754, 755]}
-{"pages": [754, 755, 756]}
-{"pages": [755, 756]}
-{"pages": [757, 758]}
-{"pages": [757, 758, 759]}
-{"pages": [758, 759, 760]}
-{"pages": [760, 761]}
-{"pages": [760, 761, 762]}
-{"pages": [761, 762]}
-{"pages": [762, 763]}
-{"pages": [763, 764]}
-{"pages": [763, 764]}
-{"pages": [764, 765]}
-{"pages": [765, 766]}
-{"pages": [766]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [0, 1, 2]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [2, 3, 4]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [3, 4, 5]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [5, 6]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [6, 7]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [7, 8, 9]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [8, 9, 10]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [10, 11]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [11, 12]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [12, 13]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [13, 14]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [14, 15]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [15, 16]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [16, 17, 18]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [17, 18, 19]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [19, 20]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [19, 20, 21]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [21, 22]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [22, 23, 24]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [23, 24, 25]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [25, 26]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [26, 27]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [27, 28]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [28, 29]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [29, 30]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [30, 31, 32]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [31, 32, 33]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [32, 33, 34]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [33, 34, 35]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [34, 35, 36]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [36, 37]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [37, 38, 39]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [38, 39, 40]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [39, 40, 41]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [41, 42]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [41, 42, 43]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [42, 43, 44]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [43, 44, 45]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [45, 46, 47]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [46, 47, 48]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [48, 49]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [49, 50]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [50, 51, 52]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [51, 52, 53]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [53, 54]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [54, 55]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [55, 56, 57]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [56, 57, 58]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [57, 58, 59]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [59, 60]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [60, 61]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [61, 62, 63]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [62, 63, 64]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [64, 65]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [65, 66]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [66, 67, 68]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [67, 68, 69]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [69, 70]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [70, 71, 72]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [71, 72, 73]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [73, 74, 75]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [74, 75, 76]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [76, 77]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [77, 78]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [78, 79]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [78, 79, 80]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [80, 81, 82]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [81, 82, 83]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [83, 84, 85]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [84, 85, 86, 87]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [86, 87, 88]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [88, 89, 90]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [89, 90, 91]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [91, 92]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [92, 93, 94]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [93, 94, 95]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [95, 96]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [96, 97]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [97, 98]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [98, 99, 100]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [99, 100, 101, 102]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [101, 102, 103]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [103, 104, 105]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [105, 106]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [106, 107]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [107, 108, 109]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [109, 110]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [110, 111]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [111, 112, 113]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [112, 113, 114]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [114, 115]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [114, 115, 116]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [116, 117, 118]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [118, 119, 120]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [119, 120, 121]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [121, 122, 123]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [122, 123, 124]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [124, 125]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [124, 125, 126]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [126, 127, 128]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [127, 128, 129]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [128, 129, 130]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [129, 130]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [130, 131]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [132, 133, 134]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [133, 134, 135]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [134, 135, 136]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [136, 137]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [137, 138, 139]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [138, 139, 140]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [139, 140, 141]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [141, 142]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [142, 143]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [143, 144]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [144, 145]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [145, 146, 147]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [146, 147, 148]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [147, 148, 149]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [149, 150]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [150, 151]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [151, 152]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [152, 153]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [153, 154]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [154, 155, 156]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [155, 156, 157]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [157, 158]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [158, 159]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [159, 160, 161]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [160, 161, 162]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [162, 163]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [163, 164]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [164, 165, 166]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [166, 167, 168]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [167, 168, 169]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [168, 169, 170]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [170, 171]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [171, 172, 173]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [172, 173, 174]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [174, 175, 176]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [175, 176, 177]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [176, 177]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [177, 178, 179]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [178, 179, 180]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [179, 180, 181]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [181, 182]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [182, 183, 184]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [183, 184, 185]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [185, 186, 187]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [186, 187, 188]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [187, 188, 189]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [189, 190, 191, 192]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [191, 192, 193]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [192, 193]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [193, 194]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [194]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [194, 195, 196]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [195, 196, 197]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [196, 197, 198]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [197, 198, 199]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [199, 200]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [200, 201, 202]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [201, 202, 203]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [202, 203, 204]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [203, 204, 205]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [205, 206]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [206, 207]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [207, 208]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [208, 209]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [209, 210]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [210]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [211, 212]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [211, 212, 213]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [212, 213, 214, 215]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [213, 214, 215, 216]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [216, 217]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [217]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [218, 219]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [218, 219, 220]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [219, 220, 221]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [220, 221, 222]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [221, 222, 223]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [223, 224]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [224]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [225, 226]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [226, 227]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [226, 227, 228]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [228, 229]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [229, 230, 231]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [230, 231, 232]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [231, 232, 233]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [233, 234]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [234, 235]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [235, 236]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [236, 237, 238]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [237, 238, 239]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [239, 240]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [240, 241]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [241, 242]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [242, 243]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [243, 244]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [244]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [245]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [245, 246]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [246, 247, 248]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [247, 248]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [248, 249, 250]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [249, 250, 251]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [250, 251, 252]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [251, 252, 253]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [252, 253, 254]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [253, 254]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [254, 255]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [255, 256]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [256, 257]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [257, 258, 259]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [258, 259, 260]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [259, 260, 261]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [260, 261, 262]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [262, 263]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [263, 264]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [264, 265]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [265, 266]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [266, 267]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [267, 268]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [268, 269]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [269, 270]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [269, 270]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [270, 271]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [271, 272]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [272, 273]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [273, 274]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [274, 275]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [275, 276]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [276, 277]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [278, 279, 280]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [280, 281, 282]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [281, 282, 283]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [282, 283, 284]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [284, 285]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [285, 286]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [286, 287]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [286, 287, 288]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [287, 288, 289]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [288, 289]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [289, 290]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [290, 291]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [291, 292]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [292, 293]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [293, 294, 295]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [294, 295, 296]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [296, 297]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [297, 298]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [298, 299, 300]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [300, 301]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [301, 302]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [302, 303, 304]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [303, 304, 305]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [305, 306]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [306, 307]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [306, 307, 308]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [307, 308, 309]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [309, 310]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [310, 311, 312]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [311, 312]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [312, 313, 314]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [313, 314, 315]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [314, 315, 316]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [316, 317]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [317, 318]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [318, 319]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [319, 320]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [320, 321]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [321, 322]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [321, 322, 323]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [323, 324]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [324, 325]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [325, 326, 327]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [326, 327, 328]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [328, 329]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [329, 330]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [330, 331]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [331, 332]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [332]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [332, 333, 334]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [333, 334, 335]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [334, 335]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [336, 337]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [336, 337]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [338, 339, 340]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [339, 340, 341]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [340, 341, 342]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [341, 342, 343]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [343, 344]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [344, 345, 346]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [345, 346]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [346, 347]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [347, 348, 349]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [348, 349]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [350, 351, 352]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [351, 352, 353]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [352, 353, 354]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [353, 354, 355]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [354, 355, 356]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [356, 357]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [357, 358]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [358, 359, 360]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [359, 360, 361]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [360, 361]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [361, 362, 363]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [362, 363, 364]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [363, 364]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [364, 365, 366]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [366, 367]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [367, 368, 369]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [368, 369, 370]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [370, 371]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [371, 372]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [372, 373]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [373, 374, 375]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [374, 375, 376]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [376, 377]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [376, 377, 378]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [377, 378]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [378, 379]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [379, 380]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [380, 381, 382]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [382, 383]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [383, 384, 385]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [384, 385, 386]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [386, 387]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [387, 388]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [388]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [389, 390]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [389, 390]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [390, 391, 392]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [391, 392, 393]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [393, 394, 395]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [394, 395, 396]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [396, 397]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [397, 398, 399]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [398, 399, 400]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [400, 401]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [401, 402]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [402, 403]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [403, 404]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [404, 405]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [405, 406]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [406, 407]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [407, 408]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [408, 409]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [409, 410]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [410, 411]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [411, 412, 413]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [412, 413, 414]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [414, 415]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [415, 416]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [416, 417]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [417, 418, 419]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [418, 419, 420]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [420, 421]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [421, 422]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [422, 423, 424]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [424, 425]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [425, 426]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [426, 427]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [427, 428]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [428, 429]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [429, 430, 431]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [430, 431, 432]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [431, 432]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [432, 433, 434]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [434, 435]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [435, 436]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [436, 437, 438]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [437, 438, 439]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [438, 439, 440]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [440, 441, 442]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [441, 442, 443]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [442, 443, 444]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [443, 444, 445]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [445, 446, 447]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [447, 448]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [447, 448, 449]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [448, 449, 450]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [450, 451]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [451, 452, 453]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [452, 453, 454]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [454, 455]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [455, 456]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [457, 458]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [458, 459]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [459, 460]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [460, 461]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [461, 462]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [462, 463]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [462, 463]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [463, 464]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [464, 465, 466]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [465, 466, 467]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [467, 468]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [468, 469, 470]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [469, 470, 471]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [471, 472]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [471, 472]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [472, 473]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [473, 474]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [474, 475]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [475, 476]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [475, 476, 477, 478]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [477, 478, 479]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [479, 480]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [480, 481]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [480, 481]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [481, 482]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [482, 483]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [483, 484]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [484, 485]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [485, 486]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [486, 487]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [487, 488]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [487, 488, 489]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [489, 490, 491]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [490, 491, 492]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [492, 493]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [493, 494]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [494, 495]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [495, 496]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [496, 497, 498]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [497, 498, 499]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [498, 499, 500]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [499, 500, 501]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [500, 501]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [501, 502]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [502, 503, 504]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [503, 504, 505]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [505, 506]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [506, 507]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [507, 508]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [508, 509]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [509, 510]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [510, 511]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [511, 512]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [512, 513]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [513, 514]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [513, 514]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [514, 515]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [515, 516]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [516, 517]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [517, 518]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [518, 519]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [519, 520]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [519, 520, 521]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [520, 521, 522]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [521, 522]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [522, 523, 524, 525]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [525, 526, 527]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [526, 527, 528]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [527, 528, 529]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [529, 530]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [530, 531]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [531, 532, 533]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [532, 533, 534]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [533, 534, 535]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [534, 535, 536]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [536, 537]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [537, 538]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [538, 539]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [539, 540]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [540]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [540, 541]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [541, 542]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [542, 543]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [543, 544]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [544, 545]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [545, 546]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [546, 547]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [547, 548]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [548, 549]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [548, 549, 550]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [550, 551]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [551, 552]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [552, 553, 554]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [553, 554, 555]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [554, 555, 556]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [556, 557]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [556, 557]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [557, 558]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [558, 559]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [559, 560]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [559, 560]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [560, 561, 562]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [561, 562, 563]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [562, 563, 564]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [564, 565]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [565, 566]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [566, 567]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [566, 567]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [567, 568]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [568, 569]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [569]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [569, 570]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [570, 571]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [571, 572]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [572, 573]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [573, 574, 575]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [575, 576]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [576, 577]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [577, 578]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [578, 579]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [579, 580, 581]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [580, 581]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [581, 582]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [582, 583]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [583, 584]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [584, 585]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [585, 586]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [586, 587]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [587, 588]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [588, 589]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [589, 590]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [590, 591]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [591, 592]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [592, 593]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [593, 594]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [594, 595]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [594, 595]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [595, 596]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [596, 597]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [597]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [598]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [598, 599]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [599, 600]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [600, 601, 602]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [601, 602, 603]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [603, 604]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [604, 605]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [605, 606]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [606, 607, 608]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [607, 608, 609]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [609, 610]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [610, 611, 612]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [611, 612, 613]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [613, 614]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [613, 614, 615]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [614, 615, 616]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [615, 616]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [616, 617]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [617, 618]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [618, 619]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [619, 620]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [620, 621]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [621, 622]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [622, 623]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [622, 623]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [623, 624]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [624, 625, 626]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [625, 626]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [626, 627]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [627, 628]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [628, 629, 630]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [629, 630, 631]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [630, 631]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [631, 632]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [632, 633]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [633, 634]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [634, 635]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [635, 636]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [636, 637]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [636, 637, 638]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [637, 638, 639]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [639, 640]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [640, 641]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [641, 642]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [642, 643]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [643, 644]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [644, 645]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [645, 646]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [646, 647]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [646, 647, 648]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [647, 648, 649, 650]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [648, 649, 650, 651]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [651, 652]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [652, 653]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [653, 654, 655]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [654, 655]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [655, 656]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [656, 657]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [657, 658]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [657, 658, 659]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [658, 659, 660]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [660, 661]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [661, 662]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [662, 663]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [662, 663, 664]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [663, 664, 665]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [665, 666]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [666, 667]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [667, 668]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [668, 669]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [669, 670]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [670, 671]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [671, 672]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [671, 672]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [672, 673]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [673, 674]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [673, 674, 675]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [675, 676]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [676, 677, 678]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [677, 678, 679]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [679, 680, 681]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [680, 681, 682]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [681, 682, 683]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [682, 683, 684]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [683, 684, 685]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [684, 685, 686]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [686, 687]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [687, 688]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [688, 689]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [689, 690]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [690, 691, 692]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [692, 693]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [693, 694]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [694, 695]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [694, 695, 696]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [696]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [696, 697]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [697, 698]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [697, 698, 699]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [698, 699, 700, 701]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [700, 701]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [701, 702, 703]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [702, 703, 704]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [703, 704, 705]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [704, 705]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [705, 706]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [706, 707]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [707, 708]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [707, 708]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [708, 709]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [709, 710, 711]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [710, 711, 712]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [711, 712, 713]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [712, 713, 714]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [714, 715]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [714, 715, 716]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [715, 716]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [716, 717]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [717, 718]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [718, 719]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [718, 719, 720]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [719, 720, 721]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [721, 722]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [722, 723]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [723, 724]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [724, 725]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [725, 726]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [726, 727]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [727, 728]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [728]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [729, 730]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [730, 731]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [731, 732]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [732, 733, 734]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [733, 734]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [734, 735]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [735, 736]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [736, 737]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [737, 738]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [738, 739]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [738, 739]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [739, 740, 741]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [740, 741, 742]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [742, 743]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [743, 744, 745]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [744, 745, 746]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [746, 747]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [747, 748]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [748, 749]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [749, 750, 751]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [750, 751, 752]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [752, 753]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [753, 754]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [753, 754, 755]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [754, 755, 756]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [755, 756]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [757, 758]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [757, 758, 759]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [758, 759, 760]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [760, 761]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [760, 761, 762]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [761, 762]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [762, 763]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [763, 764]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [763, 764]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [764, 765]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [765, 766]}
+{"/home/cyril.vallez@hevs.ch/ELO_RAG_system/data/books/favre_truncated.pdf": [766]}
