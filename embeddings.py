@@ -140,7 +140,7 @@ def embed_book(model: textwiz.HFEmbeddingModel, book_pages: list[str], book_name
 
     # Format the chunks and pages as dictionary to save as jsonl
     chunks_dic = [{'text': chunk} for chunk in chunks]
-    book_for_page_mapping = os.path.join(utils.BOOK_FOLDER, book_name + '_truncated.pdf')
+    book_for_page_mapping = os.path.relpath(os.path.join(utils.BOOK_FOLDER, book_name + '_truncated.pdf'))
     page_mapping_dic = [{book_for_page_mapping: pages} for pages in chunk_pages]
 
     # Save embeddings, chunks, and chunks page mapping
