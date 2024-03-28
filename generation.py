@@ -91,4 +91,4 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
         yield conv, output, output1, pdf
 
 
-def continuation()
+# def continuation()
