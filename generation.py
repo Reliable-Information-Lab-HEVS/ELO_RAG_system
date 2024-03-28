@@ -86,7 +86,7 @@ def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_
     # Yield from chat_generation, but remove first value
     for _, conv, output, output1, pdf in rag_augmented_generation(chat_model=chat_model, embedding_model=embedding_model, db_embeddings=db_embeddings,
                                                           db_texts=db_texts, db_pages=db_pages, user_query=user_query,
-                                                          conv=conversation, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens,
+                                                          conv=conversation, chatbot_output=chatbot_output, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens,
                                                           do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, **kwargs):
         yield conv, output, output1, pdf
 
