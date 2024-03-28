@@ -207,6 +207,21 @@ demo = gr.Blocks(title='RAG example')
 
 with demo:
 
+    gr.Markdown('# <center>MathBot: votre assistant spécialisé en mathématiques !</center>')
+    gr.Markdown("""MathBot a accès à des documents externes pour répondre à vos questions : 
+                 
+- Mathématiques & Statistiques de Gestion, par Jean-Pierre Favre
+- Statistique descriptive et probabilités, par Béatrice de Tilière et David Godhino
+                
+Si MathBot trouve un lien entre ces documents et votre question, il n'hésitera pas à aller piocher dans ces \
+ouvrages pour fournir une réponse détaillée. Dans ce cas, les pages dont MathBot s'est servie pour façonner sa \
+réponse seront affichées à l'écran pour vous permettre d'obtenir plus de contexte et eventuellement verifier la \
+veracité de la réponse.
+                
+⛔️ **Limitations :** Les pdfs qui s'affichent à l'écran apparaissent flous. Cela est une conséquence direct d'un bug \
+dans le front-end que je ne peux pas facilement contourner.""")
+
+
     # state variables
     conversation.render()
     chatbot_output.render()
@@ -226,6 +241,9 @@ with demo:
     # Relevant pdf pages
     pdf.render()
             
+    gr.Markdown("### Prompt Examples")
+    gr.Examples(prompt_examples, inputs=prompt)
+
     # Accordion for generation parameters
     with gr.Accordion("Text generation parameters", open=False):
         similarity_threshold.render()
@@ -238,9 +256,6 @@ with demo:
             top_k.render()
             top_p.render()
             temperature.render()
-
-    gr.Markdown("### Prompt Examples")
-    gr.Examples(prompt_examples, inputs=prompt)
 
 
 
