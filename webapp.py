@@ -86,7 +86,7 @@ def clear_chatbot(username: str) -> tuple[GenericConversation, str, list[list]]:
     if username != '':
         CACHED_CONVERSATIONS[username] = conversation
 
-    return conversation, conversation.to_gradio_format(), conversation.id
+    return conversation, conversation.to_gradio_format(), conversation.id, gr.update(visible=False)
 
 
 
@@ -262,15 +262,12 @@ with demo:
                             queue=False, concurrency_limit=None)
     
     # Clear the prompt and output boxes when clicking the button
-    clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, conv_id],
+    clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, conv_id, pdf],
                        queue=False, concurrency_limit=None)
 
     # Change visibility of generation parameters if we perform greedy search
     do_sample.input(lambda value: [gr.update(visible=value) for _ in range(3)], inputs=do_sample,
                     outputs=[top_k, top_p, temperature], queue=False, concurrency_limit=None)
-    
-    pdf.change(lambda value: gr.update(visible=value is not None), inputs=pdf, outputs=pdf, queue=False,
-               concurrency_limit=None)
     
     # Correctly display the model and quantization currently on memory if we refresh the page (instead of default
     # value for the elements) and correctly reset the chat output

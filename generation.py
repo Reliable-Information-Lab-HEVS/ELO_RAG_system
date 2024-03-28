@@ -26,9 +26,8 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
     # Find k biggest scores (here we only use k=1)
     similarity, indices = torch.topk(scores, k=1)
 
-    # Find nice threshold to not give context to chat model if unrelated
-
-    pdf_path = None
+    # If we don't use RAG, do not show pdf element
+    pdf_element = gr.update(visible=False)
 
     # If unrelated to the embeddings we have, just pass on the query
     if similarity < similarity_threshold:
@@ -40,6 +39,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
         page_mapping = db_pages[indices.item()]
         book = list(page_mapping.keys())[0]
         pdf_path = utils.create_temporary_pdf(book, page_mapping[book])
+        pdf_element = gr.update(value=pdf_path, visible=True)
 
         # Create model input
         chat_model_input = template.DEFAULT_RAG_PROMPT.format(query=user_query.strip(), knowledge=knowledge.strip())
@@ -50,7 +50,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
     for input, conv, chatbot in chat_generation(model=chat_model, conversation=conv, prompt=chat_model_input, max_new_tokens=max_new_tokens,
                                                 do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, use_seed=False,
                                                 seed=0, **kwargs):
-        yield input, conv, chatbot, pdf_path
+        yield input, conv, chatbot, pdf_element
     
 
 
