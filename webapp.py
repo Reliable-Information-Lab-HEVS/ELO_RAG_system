@@ -22,7 +22,7 @@ CHAT_MODEL = textwiz.HFCausalModel('zephyr-7B-beta', gpu_rank=0)
 EMBEDDING_MODEL = textwiz.HFEmbeddingModel('SFR-Embedding-Mistral', gpu_rank=1)
 
 # Load embeddings
-EMBEDDINGS, EMBEDDINGS_TEXT, EMBEDDINGS_PAGES = embedding_loader.load_embedding('favre')
+EMBEDDINGS, EMBEDDINGS_TEXT, EMBEDDINGS_PAGES = embedding_loader.load_all_embeddings()
 EMBEDDINGS = torch.tensor(EMBEDDINGS, device=1, requires_grad=False)
 
 

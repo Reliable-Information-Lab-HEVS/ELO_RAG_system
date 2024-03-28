@@ -1,5 +1,4 @@
 import re
-import os
 
 import torch
 import gradio as gr
@@ -10,11 +9,9 @@ from textwiz.webapp import generator, chat_generation
 from templates import template
 from helpers import utils
 
-FAVRE_TRUNCATED = os.path.join(utils.BOOK_FOLDER, 'favre_truncated.pdf')
-
 
 def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model: textwiz.HFEmbeddingModel,
-                             db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[list[int]],
+                             db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[dict],
                              user_query: str, conv: GenericConversation, similarity_threshold: float, max_new_tokens: int,
                              do_sample: bool, top_k: int, top_p: float, temperature: float, **kwargs) -> generator[tuple[str, GenericConversation, list[list]]]:
     
@@ -40,8 +37,9 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
     else:
         # Find corresponding text and book pages
         knowledge = db_texts[indices.item()]
-        pages = db_pages[indices.item()]
-        pdf_path = utils.create_temporary_pdf(FAVRE_TRUNCATED, pages)
+        page_mapping = db_pages[indices.item()]
+        book = list(page_mapping.keys())[0]
+        pdf_path = utils.create_temporary_pdf(book, page_mapping[book])
 
         # Create model input
         chat_model_input = template.DEFAULT_RAG_PROMPT.format(query=user_query.strip(), knowledge=knowledge.strip())
@@ -57,7 +55,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
 
 
 def retry_rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model: textwiz.HFEmbeddingModel,
-                                   db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[list[int]],
+                                   db_embeddings: torch.Tensor, db_texts: list[str], db_pages: list[dict],
                                    conversation: GenericConversation, similarity_threshold: float, max_new_tokens: int,
                                    do_sample: bool, top_k: int, top_p: float, temperature: float, **kwargs):
 
