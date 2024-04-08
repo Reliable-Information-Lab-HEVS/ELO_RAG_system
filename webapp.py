@@ -207,7 +207,9 @@ demo = gr.Blocks(title='RAG example')
 
 with demo:
 
-    gr.Markdown('# <center>MathBot: votre assistant spécialisé en mathématiques !</center>')
+    gr.HTML("""<div style="text-align: center">
+<h1>MathBot: votre assistant spécialisé en mathématiques !</h1>
+</div>""")
     gr.Markdown("""MathBot a accès à des documents externes pour répondre à vos questions : 
                  
 - Mathématiques & Statistiques de Gestion, par Jean-Pierre Favre
