@@ -9,12 +9,15 @@ import textwiz
 from textwiz.templates import GenericConversation
 from textwiz.webapp import generator
 
-from helpers import embedding_loader
+from helpers import embedding_loader, utils
 from templates.template import DEFAULT_SYSTEM_PROMPT, FEW_SHOT_EXAMPLES, FEW_SHOT_ANSWERS
 from generation import rag_augmented_generation, retry_rag_augmented_generation, continuation
 
 # Disable analytics (can be set to anything except True really, we set it to False for readability)
 os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
+
+# Serve pdfs directly
+gr.set_static_paths(paths=[utils.BOOK_FOLDER])
 
 # Chat model
 CHAT_MODEL = textwiz.HFCausalModel('zephyr-7B-beta', gpu_rank=0)
