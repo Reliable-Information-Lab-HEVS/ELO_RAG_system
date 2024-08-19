@@ -139,9 +139,7 @@ def show_pdf(pdf_link: str | None):
     if pdf_link is None:
         return gr.update(visible=False)
     else:
-        # Need to add the "file=" to serve local files
-        # return gr.update(value=f"file={pdf_link}", visible=True)
-        return gr.update(value=pdf_link, visible=True)
+        return gr.update(value=f"""<a target="_blank" rel="noopener noreferrer" href="https://elo.ai-forge.ch/file={pdf_link}">Link</a>""", visible=True)
 
 
 # Logging functions. We need to define 3 different as we cannot pass the `flag_option` params from inside the demo
@@ -183,8 +181,7 @@ prompt = gr.Textbox(placeholder='Write your prompt here.', label='Prompt')
 output = gr.Chatbot(label='Conversation', height=500)
 # We need to use a Textbox to store the path because the PDF component behaves weirdly
 pdf_link = gr.Textbox(None, label='PDF link', visible=False)
-# pdf = PDF(label='Relevant pages', visible=False, interactive=False)
-pdf = gr.File(label='Relevant pages', visible=False, interactive=False)
+pdf_button = gr.HTML('Show relevant pages', visible=False)
 generate_button = gr.Button('▶️ Submit', variant='primary')
 continue_button = gr.Button('🔂 Continue', variant='primary')
 retry_button = gr.Button('🔄 Retry', variant='primary')
@@ -198,6 +195,7 @@ chatbot_output = gr.State([])
 # cannot be used in callbacks).
 username = gr.Textbox('', label='Username', visible=False)
 conv_id = gr.Textbox('', label='Conversation id', visible=False)
+pdf = gr.File(label='Relevant pages', visible=False, interactive=False)
 
 # Define the inputs for the main inference
 inputs_to_chatbot = [conversation, prompt, chatbot_output, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
@@ -302,6 +300,8 @@ De plus, ils prennent parfois un certain temps à charger.""")
     # Clear the prompt and output boxes when clicking the button
     clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, chatbot_output, conv_id, pdf],
                        queue=False, concurrency_limit=None)
+    
+    pdf_button.click()
 
     # Change visibility of generation parameters if we perform greedy search
     do_sample.input(lambda value: [gr.update(visible=value) for _ in range(3)], inputs=do_sample,
