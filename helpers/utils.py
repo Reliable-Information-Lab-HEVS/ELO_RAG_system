@@ -19,7 +19,6 @@ EMBEDDING_FOLDER = os.path.join(DATA_FOLDER, 'embeddings')
 
 # Create temporary directory to store potential temporary pdf files that will be displayed
 TEMPDIR = tempfile.TemporaryDirectory(dir=BOOK_FOLDER)
-print(TEMPDIR.name)
 
 
 def validate_filename(filename: str, extension: str):
