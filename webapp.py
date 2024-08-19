@@ -139,7 +139,9 @@ def show_pdf(pdf_link: str | None):
     if pdf_link is None:
         return gr.update(visible=False)
     else:
-        return gr.update(value=f"""<a target="_blank" rel="noopener noreferrer" href="https://elo.ai-forge.ch/file={pdf_link}">Link</a>""", visible=True)
+        return gr.update(value=f"""<div style="text-align: center">
+<h1>Click <a target="_blank" rel="noopener noreferrer" href="https://elo.ai-forge.ch/file={pdf_link}">here</a> to show relevant pdf pages</h1>
+</div>""", visible=True)
 
 
 # Logging functions. We need to define 3 different as we cannot pass the `flag_option` params from inside the demo
