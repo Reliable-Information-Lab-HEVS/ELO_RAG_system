@@ -195,7 +195,6 @@ chatbot_output = gr.State([])
 # cannot be used in callbacks).
 username = gr.Textbox('', label='Username', visible=False)
 conv_id = gr.Textbox('', label='Conversation id', visible=False)
-pdf = gr.File(label='Relevant pages', visible=False, interactive=False)
 
 # Define the inputs for the main inference
 inputs_to_chatbot = [conversation, prompt, chatbot_output, similarity_threshold, max_new_tokens, do_sample, top_k, top_p, temperature]
@@ -256,7 +255,7 @@ De plus, ils prennent parfois un certain temps à charger.""")
         clear_button.render()
 
     # Relevant pdf pages
-    pdf.render()
+    pdf_button.render()
             
     gr.Markdown("### Prompt Examples")
     gr.Examples(prompt_examples, inputs=prompt)
@@ -280,7 +279,7 @@ De plus, ils prennent parfois un certain temps à charger.""")
     generate_event1 = gr.on(triggers=[generate_button.click, prompt.submit], fn=rag_generation, inputs=inputs_to_chatbot,
                             outputs=[prompt, conversation, output, chatbot_output, pdf_link], concurrency_id='generation')
     # Add automatic callbacks on success
-    follow_up1 = generate_event1.success(show_pdf, inputs=pdf_link, outputs=pdf, queue=False, concurrency_limit=None)
+    follow_up1 = generate_event1.success(show_pdf, inputs=pdf_link, outputs=pdf_button, queue=False, concurrency_limit=None)
     follow_up1.success(logging_generation, inputs=inputs_to_callback, preprocess=False, queue=False, concurrency_limit=None)
     
     # Continue generation when clicking the button
@@ -294,11 +293,11 @@ De plus, ils prennent parfois un certain temps à charger.""")
     generate_event3 = retry_button.click(retry_rag_generation, inputs=inputs_to_chatbot_retry,
                                          outputs=[conversation, output, chatbot_output, pdf_link], concurrency_id='generation')
     # Add automatic callbacks on success
-    follow_up3 = generate_event3.success(show_pdf, inputs=pdf_link, outputs=pdf, queue=False, concurrency_limit=None)
+    follow_up3 = generate_event3.success(show_pdf, inputs=pdf_link, outputs=pdf_button, queue=False, concurrency_limit=None)
     follow_up3.success(logging_retry, inputs=inputs_to_callback, preprocess=False, queue=False, concurrency_limit=None)
     
     # Clear the prompt and output boxes when clicking the button
-    clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, chatbot_output, conv_id, pdf],
+    clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, chatbot_output, conv_id, pdf_link],
                        queue=False, concurrency_limit=None)
 
     # Change visibility of generation parameters if we perform greedy search
