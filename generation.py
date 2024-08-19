@@ -1,4 +1,5 @@
 import re
+import os
 
 import torch
 import gradio as gr
@@ -27,9 +28,6 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
     # Find k biggest scores (here we only use k=1)
     similarity, indices = torch.topk(scores, k=1)
 
-    # If we don't use RAG, do not show pdf element
-    pdf_element = gr.update(visible=False)
-
     pdf_path = None
     # If unrelated to the embeddings we have, just pass on the query
     if similarity < similarity_threshold:
@@ -40,8 +38,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
         knowledge = db_texts[indices.item()]
         page_mapping = db_pages[indices.item()]
         book = list(page_mapping.keys())[0]
-        pdf_path = utils.create_temporary_pdf(book, page_mapping[book])
-        # pdf_element = gr.update(value=pdf_path, visible=True)
+        pdf_path = os.path.relpath(utils.create_temporary_pdf(book, page_mapping[book]))
 
         # Create model input
         chat_model_input = template.DEFAULT_RAG_PROMPT.format(query=user_query.strip(), knowledge=knowledge.strip())
