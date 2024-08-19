@@ -300,8 +300,6 @@ De plus, ils prennent parfois un certain temps à charger.""")
     # Clear the prompt and output boxes when clicking the button
     clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, chatbot_output, conv_id, pdf],
                        queue=False, concurrency_limit=None)
-    
-    pdf_button.click()
 
     # Change visibility of generation parameters if we perform greedy search
     do_sample.input(lambda value: [gr.update(visible=value) for _ in range(3)], inputs=do_sample,
