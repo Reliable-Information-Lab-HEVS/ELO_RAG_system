@@ -17,7 +17,7 @@ from generation import rag_augmented_generation, retry_rag_augmented_generation,
 os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
 
 # Serve pdfs directly
-gr.set_static_paths(paths=[utils.BOOK_FOLDER + '/', utils.TEMPDIR.name + '/'])
+gr.set_static_paths(paths=[utils.TEMPDIR.name + '/'])
 
 # Chat model
 CHAT_MODEL = textwiz.HFCausalModel('zephyr-7B-beta', gpu_rank=0)
@@ -256,7 +256,6 @@ De plus, ils prennent parfois un certain temps à charger.""")
         clear_button.render()
 
     # Relevant pdf pages
-    gr.Image(value=f"/file={os.path.join(utils.BOOK_FOLDER, 'test.jpg')}")
     pdf.render()
             
     gr.Markdown("### Prompt Examples")
