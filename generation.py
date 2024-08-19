@@ -30,6 +30,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
     # If we don't use RAG, do not show pdf element
     pdf_element = gr.update(visible=False)
 
+    pdf_path = None
     # If unrelated to the embeddings we have, just pass on the query
     if similarity < similarity_threshold:
         chat_model_input = user_query
@@ -40,7 +41,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
         page_mapping = db_pages[indices.item()]
         book = list(page_mapping.keys())[0]
         pdf_path = utils.create_temporary_pdf(book, page_mapping[book])
-        pdf_element = gr.update(value=pdf_path, visible=True)
+        # pdf_element = gr.update(value=pdf_path, visible=True)
 
         # Create model input
         chat_model_input = template.DEFAULT_RAG_PROMPT.format(query=user_query.strip(), knowledge=knowledge.strip())
@@ -52,7 +53,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
                                                 do_sample=do_sample, top_k=top_k, top_p=top_p, temperature=temperature, use_seed=False,
                                                 seed=0, **kwargs):
         chatbot_output[-1][1] = chatbot[-1][1]
-        yield input, conv, chatbot_output, chatbot_output, pdf_element
+        yield input, conv, chatbot_output, chatbot_output, pdf_path
     
 
 
