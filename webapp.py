@@ -17,8 +17,7 @@ from generation import rag_augmented_generation, retry_rag_augmented_generation,
 os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
 
 # Chat model
-# CHAT_MODEL = textwiz.HFCausalModel('zephyr-7B-beta', gpu_rank=0)
-CHAT_MODEL = textwiz.HFCausalModel('llama3-8B-instruct', gpu_rank=0)
+CHAT_MODEL = textwiz.HFCausalModel('zephyr-7B-beta', gpu_rank=0)
 # Embedding model
 EMBEDDING_MODEL = textwiz.HFEmbeddingModel('SFR-Embedding-Mistral', gpu_rank=1)
 
