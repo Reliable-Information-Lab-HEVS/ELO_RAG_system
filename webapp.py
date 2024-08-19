@@ -17,7 +17,7 @@ from generation import rag_augmented_generation, retry_rag_augmented_generation,
 os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
 
 # Serve pdfs directly
-gr.set_static_paths(paths=[utils.BOOK_FOLDER + '/'])
+# gr.set_static_paths(paths=[utils.BOOK_FOLDER + '/'])
 
 # Chat model
 CHAT_MODEL = textwiz.HFCausalModel('zephyr-7B-beta', gpu_rank=0)
