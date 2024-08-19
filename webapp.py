@@ -255,6 +255,7 @@ De plus, ils prennent parfois un certain temps à charger.""")
         clear_button.render()
 
     # Relevant pdf pages
+    gr.Image(value=f"/file={os.path.join(utils.BOOK_FOLDER, 'test.jpg')}")
     pdf.render()
             
     gr.Markdown("### Prompt Examples")
