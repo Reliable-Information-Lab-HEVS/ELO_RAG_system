@@ -40,9 +40,7 @@ def rag_augmented_generation(chat_model: textwiz.HFCausalModel, embedding_model:
         knowledge = db_texts[indices.item()]
         page_mapping = db_pages[indices.item()]
         book = list(page_mapping.keys())[0]
-        print(book)
         pdf_path = utils.create_temporary_pdf(book, page_mapping[book])
-        print(pdf_path)
         # pdf_element = gr.update(value=pdf_path, visible=True)
 
         # Create model input

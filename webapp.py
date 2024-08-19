@@ -132,6 +132,13 @@ def loading(request: gr.Request) -> tuple[GenericConversation, list[list], str, 
     return actual_conv, gr.update(value=actual_conv.to_gradio_format(), label='MathBot'), conv_id, username, gr.update(maximum=CHAT_MODEL.get_context_size())
 
 
+def show_pdf(pdf_link: str | None):
+    if pdf_link is None:
+        return gr.update(visible=False)
+    else:
+        return gr.update(value=pdf_link, visible=True)
+
+
 # Logging functions. We need to define 3 different as we cannot pass the `flag_option` params from inside the demo
 def logging_generation(*args):
     """Logging function. Simply flag everything back to the logger."""
@@ -169,8 +176,9 @@ temperature = gr.Slider(0, 1, value=0.3, step=0.01, label='Temperature',
 # Define elements of the chatbot
 prompt = gr.Textbox(placeholder='Write your prompt here.', label='Prompt')
 output = gr.Chatbot(label='Conversation', height=500)
-pdf = PDF(label='Relevant pages', visible=True, interactive=False, preprocess=False)
-# pdf = gr.Textbox('', label='Relevant pages', visible=False)
+# We need to use a Textbox to store the path because the PDF component behaves weirdly
+pdf_link = gr.Textbox(None, label='PDF link', visible=False)
+pdf = PDF(label='Relevant pages', visible=False, interactive=False)
 generate_button = gr.Button('▶️ Submit', variant='primary')
 continue_button = gr.Button('🔂 Continue', variant='primary')
 retry_button = gr.Button('🔄 Retry', variant='primary')
@@ -231,6 +239,7 @@ De plus, ils prennent parfois un certain temps à charger.""")
     chatbot_output.render()
     username.render()
     conv_id.render()
+    pdf_link.render()
 
     # Main UI
     output.render()
@@ -265,10 +274,10 @@ De plus, ils prennent parfois un certain temps à charger.""")
 
     # Perform chat generation when clicking the button or pressing enter
     generate_event1 = gr.on(triggers=[generate_button.click, prompt.submit], fn=rag_generation, inputs=inputs_to_chatbot,
-                            outputs=[prompt, conversation, output, chatbot_output, pdf], concurrency_id='generation')
-    # Add automatic callback on success
-    generate_event1.success(logging_generation, inputs=inputs_to_callback, preprocess=False,
-                            queue=False, concurrency_limit=None)
+                            outputs=[prompt, conversation, output, chatbot_output, pdf_link], concurrency_id='generation')
+    # Add automatic callbacks on success
+    follow_up1 = generate_event1.success(show_pdf, inputs=pdf_link, outputs=pdf, queue=False, concurrency_limit=None)
+    follow_up1.success(logging_generation, inputs=inputs_to_callback, preprocess=False, queue=False, concurrency_limit=None)
     
     # Continue generation when clicking the button
     generate_event2 = continue_button.click(continue_generation, inputs=inputs_to_chatbot_continuation,
@@ -279,10 +288,10 @@ De plus, ils prennent parfois un certain temps à charger.""")
     
     # Continue generation when clicking the button
     generate_event3 = retry_button.click(retry_rag_generation, inputs=inputs_to_chatbot_retry,
-                                         outputs=[conversation, output, chatbot_output, pdf], concurrency_id='generation')
-    # Add automatic callback on success
-    generate_event3.success(logging_retry, inputs=inputs_to_callback, preprocess=False,
-                            queue=False, concurrency_limit=None)
+                                         outputs=[conversation, output, chatbot_output, pdf_link], concurrency_id='generation')
+    # Add automatic callbacks on success
+    follow_up3 = generate_event3.success(show_pdf, inputs=pdf_link, outputs=pdf, queue=False, concurrency_limit=None)
+    follow_up3.success(logging_retry, inputs=inputs_to_callback, preprocess=False, queue=False, concurrency_limit=None)
     
     # Clear the prompt and output boxes when clicking the button
     clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, chatbot_output, conv_id, pdf],
