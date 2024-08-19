@@ -169,7 +169,8 @@ temperature = gr.Slider(0, 1, value=0.3, step=0.01, label='Temperature',
 # Define elements of the chatbot
 prompt = gr.Textbox(placeholder='Write your prompt here.', label='Prompt')
 output = gr.Chatbot(label='Conversation', height=500)
-pdf = PDF(label='Relevant pages', visible=True, interactive=False)
+# pdf = PDF(label='Relevant pages', visible=True, interactive=False)
+pdf = gr.Textbox('', label='Relevant pages', visible=False)
 generate_button = gr.Button('▶️ Submit', variant='primary')
 continue_button = gr.Button('🔂 Continue', variant='primary')
 retry_button = gr.Button('🔄 Retry', variant='primary')
