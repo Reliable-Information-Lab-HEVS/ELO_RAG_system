@@ -140,7 +140,8 @@ def show_pdf(pdf_link: str | None):
         return gr.update(visible=False)
     else:
         # Need to add the "file=" to serve local files
-        return gr.update(value=f"file={pdf_link}", visible=True)
+        # return gr.update(value=f"file={pdf_link}", visible=True)
+        return gr.update(value=pdf_link, visible=True)
 
 
 # Logging functions. We need to define 3 different as we cannot pass the `flag_option` params from inside the demo
