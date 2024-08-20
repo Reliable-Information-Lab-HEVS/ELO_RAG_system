@@ -136,7 +136,7 @@ def loading(request: gr.Request) -> tuple[GenericConversation, list[list], str, 
 
 
 def show_pdf(pdf_link: str | None):
-    if pdf_link is None:
+    if pdf_link is None or pdf_link == '':
         return gr.update(visible=False)
     else:
         return gr.update(link=f"https://elo.ai-forge.ch/file={pdf_link}", visible=True)
