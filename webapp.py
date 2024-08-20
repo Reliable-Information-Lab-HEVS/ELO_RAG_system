@@ -135,7 +135,7 @@ def loading(request: gr.Request) -> tuple[GenericConversation, list[list], str, 
     return actual_conv, gr.update(value=actual_conv.to_gradio_format(), label='MathBot'), conv_id, username, gr.update(maximum=CHAT_MODEL.get_context_size())
 
 
-def show_pdf(pdf_link: str | None):
+def update_pdf_link(pdf_link: str | None):
     if pdf_link is None or pdf_link == '':
         return gr.update(visible=False)
     else:
@@ -290,7 +290,7 @@ veracité de la réponse.""")
     generate_event3.success(logging_retry, inputs=inputs_to_callback, preprocess=False, queue=False, concurrency_limit=None)
 
     # Update value and visibility of pdf button element
-    pdf_link.change(show_pdf, inputs=pdf_link, outputs=pdf_button, queue=False, concurrency_limit=None)
+    pdf_link.change(update_pdf_link, inputs=pdf_link, outputs=pdf_button, queue=False, concurrency_limit=None)
     
     # Clear the prompt and output boxes when clicking the button
     clear_button.click(clear_chatbot, inputs=[username], outputs=[conversation, output, chatbot_output, conv_id, pdf_button],
