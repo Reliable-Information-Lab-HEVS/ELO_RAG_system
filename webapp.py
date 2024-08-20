@@ -139,9 +139,7 @@ def show_pdf(pdf_link: str | None):
     if pdf_link is None:
         return gr.update(visible=False)
     else:
-        return gr.update(value=f"""<div style="text-align: center">
-<h1>Click <a target="_blank" rel="noopener noreferrer" href="https://elo.ai-forge.ch/file={pdf_link}">here</a> to show relevant pdf pages</h1>
-</div>""", visible=True)
+        return gr.update(link=f"https://elo.ai-forge.ch/file={pdf_link}", visible=True)
 
 
 # Logging functions. We need to define 3 different as we cannot pass the `flag_option` params from inside the demo
@@ -183,7 +181,7 @@ prompt = gr.Textbox(placeholder='Write your prompt here.', label='Prompt')
 output = gr.Chatbot(label='Conversation', height=500)
 # We need to use a Textbox for pdf path because State variables are not output-ed via API
 pdf_link = gr.Textbox(None, label='PDF link', visible=False)
-pdf_button = gr.HTML('Show relevant pages', visible=False)
+pdf_button = gr.Button('Show relevant pages', visible=False)
 generate_button = gr.Button('▶️ Submit', variant='primary')
 continue_button = gr.Button('🔂 Continue', variant='primary')
 retry_button = gr.Button('🔄 Retry', variant='primary')
@@ -231,12 +229,8 @@ with demo:
                 
 Si MathBot trouve un lien entre ces documents et votre question, il n'hésitera pas à aller piocher dans ces \
 ouvrages pour fournir une réponse détaillée. Dans ce cas, les pages dont MathBot s'est servie pour façonner sa \
-réponse seront affichées à l'écran pour vous permettre d'obtenir plus de contexte et eventuellement verifier la \
-veracité de la réponse.
-                
-⛔️ **Limitations :** Les pdfs qui s'affichent à l'écran apparaissent flous. Cela est une conséquence direct d'un bug \
-dans le front-end que je ne peux pas facilement contourner.
-De plus, ils prennent parfois un certain temps à charger.""")
+réponse pourront être affichées à l'écran pour vous permettre d'obtenir plus de contexte et eventuellement verifier la \
+veracité de la réponse.""")
 
 
     # state variables
