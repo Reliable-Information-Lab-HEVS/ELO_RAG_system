@@ -181,7 +181,7 @@ prompt = gr.Textbox(placeholder='Write your prompt here.', label='Prompt')
 output = gr.Chatbot(label='Conversation', height=500)
 # We need to use a Textbox for pdf path because State variables are not output-ed via API
 pdf_link = gr.Textbox(None, label='PDF link', visible=False)
-pdf_button = gr.Button('Show relevant pages', visible=False)
+pdf_button = gr.Button('📖 Show relevant pages', visible=False, variant='primary')
 generate_button = gr.Button('▶️ Submit', variant='primary')
 continue_button = gr.Button('🔂 Continue', variant='primary')
 retry_button = gr.Button('🔄 Retry', variant='primary')
@@ -242,6 +242,8 @@ veracité de la réponse.""")
 
     # Main UI
     output.render()
+    # Relevant pdf pages
+    pdf_button.render()
     prompt.render()
 
     with gr.Row():
@@ -249,9 +251,6 @@ veracité de la réponse.""")
         continue_button.render()
         retry_button.render()
         clear_button.render()
-
-    # Relevant pdf pages
-    pdf_button.render()
             
     gr.Markdown("### Prompt Examples")
     gr.Examples(prompt_examples, inputs=prompt)
