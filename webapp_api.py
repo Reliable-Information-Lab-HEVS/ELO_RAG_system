@@ -31,7 +31,7 @@ def retry_generation():
 def continue_generation():
     """Option to continue the last turn of the conversation if it ended too early."""
     job = client.submit(MAX_ADDITIONAL_NEW_TOKENS, DO_SAMPLE, TOP_K, TOP_P, TEMPERATURE,
-                        api_name="/retry_rag_generation")
+                        api_name="/continue_rag_generation")
     for conversation in job:
         yield conversation
 

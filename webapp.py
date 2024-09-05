@@ -7,7 +7,7 @@ import gradio as gr
 from gradio_pdf import PDF
 import textwiz
 from textwiz.templates import GenericConversation
-from textwiz.webapp import generator
+from textwiz.webapp import generator, simple_authentication
 
 from helpers import embedding_loader, utils
 from templates.template import DEFAULT_SYSTEM_PROMPT, FEW_SHOT_EXAMPLES, FEW_SHOT_ANSWERS
@@ -18,6 +18,9 @@ os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
 
 # Serve pdfs directly
 gr.set_static_paths(paths=[utils.TEMPDIR.name + '/'])
+
+# File where the valid credentials are stored
+CREDENTIALS_FILE = os.path.join(utils.ROOT_FOLDER, '.gradio_login.txt')
 
 # Chat model
 CHAT_MODEL = textwiz.HFCausalModel('zephyr-7B-beta', gpu_rank=0)
@@ -68,6 +71,10 @@ def retry_rag_generation(conversation: GenericConversation, chatbot_output: list
                                               db_texts=EMBEDDINGS_TEXT, db_pages=EMBEDDINGS_PAGES, conversation=conversation,
                                               chatbot_output=chatbot_output, similarity_threshold=similarity_threshold, max_new_tokens=max_new_tokens, do_sample=do_sample,
                                               top_k=top_k, top_p=top_p, temperature=temperature)
+
+
+def authentication(username: str, password: str) -> bool:
+    return simple_authentication(CREDENTIALS_FILE, username, password)
 
 
 def clear_chatbot(username: str) -> tuple[GenericConversation, str, list[list]]:
@@ -311,6 +318,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='LLM Playground')
     parser.add_argument('--concurrency', type=int, default=1,
                         help='Number of threads that can run for generation (using the GPUs).')
+    parser.add_argument('--auth', action='store_true',
+                        help='If given, will require authentication to access the webapp.')
     parser.add_argument('--log', action='store_true',
                         help='If given, will automatically log all interactions.')
     parser.add_argument('--port', type=int, default=7878,
@@ -318,10 +327,15 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     concurrency = args.concurrency
+    auth = args.auth
     LOG = args.log
     port = args.port
 
     print(f'Analytics: {demo.analytics_enabled}')
 
-    demo.queue(default_concurrency_limit=concurrency).launch(server_name='127.0.0.1', server_port=port,
-                                                             favicon_path='https://ai-forge.ch/favicon.ico')
+    if auth:
+         demo.queue(default_concurrency_limit=concurrency).launch(server_name='127.0.0.1', server_port=port, auth=authentication,
+                                                                favicon_path='https://ai-forge.ch/favicon.ico')
+    else:
+        demo.queue(default_concurrency_limit=concurrency).launch(server_name='127.0.0.1', server_port=port,
+                                                                favicon_path='https://ai-forge.ch/favicon.ico')
