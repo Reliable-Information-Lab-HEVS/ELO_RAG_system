@@ -337,7 +337,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     concurrency = args.concurrency
 
-    genauth = args.auth
+    genauth = args.genauth
     uname = args.uname
     passwd = args.passwd
 
@@ -357,7 +357,7 @@ if __name__ == '__main__':
 
     if override:
         if auth:
-            demo.queue(default_concurrency_limit=concurrency).launch(share=True, auth=authentication)
+            demo.queue(default_concurrency_limit=concurrency).launch(share=True, auth=auth)
         else:
             demo.queue(default_concurrency_limit=concurrency).launch(share=True)
 
