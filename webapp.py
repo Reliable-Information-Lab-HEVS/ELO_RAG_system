@@ -1,6 +1,7 @@
 import os
 import argparse
 from collections import defaultdict
+from secrets import token_urlsafe
 
 import torch
 import gradio as gr
@@ -318,24 +319,53 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='LLM Playground')
     parser.add_argument('--concurrency', type=int, default=1,
                         help='Number of threads that can run for generation (using the GPUs).')
-    parser.add_argument('--auth', action='store_true',
-                        help='If given, will require authentication to access the webapp.')
+    # parser.add_argument('--auth', action='store_true',
+    #                     help='If given, will require authentication to access the webapp.')
+    parser.add_argument('--genauth', type=bool, default=True,
+                        help='If true and uname/passwd are not set, will generate and show auth username and password')
+    parser.add_argument('--uname', type=str, default='',
+                        help='username used for authentication')
+    parser.add_argument('--passwd', type=str, default='',
+                        help='password used for authentication')
     parser.add_argument('--log', action='store_true',
                         help='If given, will automatically log all interactions.')
     parser.add_argument('--port', type=int, default=7878,
                         help='On which port to deploy the webapp.')
+    parser.add_argument('--override', type=bool, default=True,
+                        help='Overrides localhost interface with a gradio share link, with chosen authentication')
     
     args = parser.parse_args()
     concurrency = args.concurrency
-    auth = args.auth
+
+    genauth = args.auth
+    uname = args.uname
+    passwd = args.passwd
+
     LOG = args.log
     port = args.port
+    override = args.override
 
+    if (not uname or not passwd) and genauth is True:
+        uname = token_urlsafe(10)
+        passwd = token_urlsafe(20)
+
+    auth = (uname, passwd)
     print(f'Analytics: {demo.analytics_enabled}')
+    print(f'Logs: {LOG}')
+    print(f'auth: {auth}')
+    print(f'auth: {override}')
 
-    if auth:
-         demo.queue(default_concurrency_limit=concurrency).launch(server_name='127.0.0.1', server_port=port, auth=authentication,
-                                                                favicon_path='https://ai-forge.ch/favicon.ico')
+    if override:
+        if auth:
+            demo.queue(default_concurrency_limit=concurrency).launch(share=True, auth=authentication)
+        else:
+            demo.queue(default_concurrency_limit=concurrency).launch(share=True)
+
     else:
-        demo.queue(default_concurrency_limit=concurrency).launch(server_name='127.0.0.1', server_port=port,
-                                                                favicon_path='https://ai-forge.ch/favicon.ico')
+        if auth:
+             demo.queue(default_concurrency_limit=concurrency).launch(server_name='127.0.0.1', server_port=port,
+                                                                      auth=authentication,
+                                                                      favicon_path='https://ai-forge.ch/favicon.ico')
+        else:
+            demo.queue(default_concurrency_limit=concurrency).launch(server_name='127.0.0.1', server_port=port,
+                                                                     favicon_path='https://ai-forge.ch/favicon.ico')
